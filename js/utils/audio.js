@@ -96,22 +96,31 @@ class AudioPlayer {
     this._audio = audio;
     audio.preload = 'auto';
 
-    audio.addEventListener('loadedmetadata', () => this._updateProgress());
+    audio.addEventListener('loadedmetadata', () => {
+      if (audio !== this._audio) return;
+      this._updateProgress();
+    });
 
     audio.addEventListener('canplaythrough', () => {
-      audio.play().catch(() => this._fallbackTTS());
+      if (audio !== this._audio) return;
+      audio.play().catch(() => this._fallbackTTS(src));
     }, { once: true });
 
     audio.addEventListener('play', () => {
+      if (audio !== this._audio) return;
       this._playing = true;
       this._startWave();
       if (this._progressBar) this._progressBar.style.width = '0%';
       if (this._onStartCb) this._onStartCb();
     });
 
-    audio.addEventListener('timeupdate', () => this._updateProgress());
+    audio.addEventListener('timeupdate', () => {
+      if (audio !== this._audio) return;
+      this._updateProgress();
+    });
 
     audio.addEventListener('ended', () => {
+      if (audio !== this._audio) return;
       this._playing = false;
       this._stopWave();
       if (this._progressBar) this._progressBar.style.width = '100%';
@@ -119,6 +128,7 @@ class AudioPlayer {
     });
 
     audio.addEventListener('error', () => {
+      if (audio !== this._audio) return;
       // File MP3 tidak ditemukan → fallback ke TTS
       console.warn(`[AudioPlayer] File tidak ditemukan: ${src}. Fallback ke Web Speech API.`);
       this._fallbackTTS(src);
@@ -215,9 +225,10 @@ class AudioPlayer {
   /* ── Stop ─────────────────────────────────────────────── */
   stop() {
     if (this._audio) {
-      this._audio.pause();
-      this._audio.src = '';
-      this._audio = null;
+      const audioToStop = this._audio;
+      this._audio = null; // Set ke null lebih dulu agar event listener mendeteksi 'audio !== this._audio' dan mengabaikan event error saat di-reset
+      audioToStop.pause();
+      audioToStop.src = '';
     }
     if (this._fallbackInterval) {
       clearInterval(this._fallbackInterval);
