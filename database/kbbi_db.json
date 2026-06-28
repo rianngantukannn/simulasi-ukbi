@@ -1,0 +1,978 @@
+{
+  "meta": {
+    "sumber": "KBBI Edisi V (kbbi.kemdikbud.go.id) + EYD Edisi V",
+    "total_kata_baku_tidak_baku": 93,
+    "total_kata_baku": 20,
+    "keterangan": "Database ini berisi pasangan kata baku dan tidak baku dalam KBBI beserta definisi dan contoh kalimat untuk keperluan simulasi UKBI."
+  },
+  "kata_baku_tidak_baku": [
+    {
+      "kata_baku": "abjad",
+      "kata_tidak_baku": [
+        "abjat"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "sistem aksara yang merupakan sekumpulan huruf yang diurutkan.",
+      "contoh_kalimat": "Pelajari abjad dengan baik."
+    },
+    {
+      "kata_baku": "abolisi",
+      "kata_tidak_baku": [
+        "abolis"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "penghapusan atau peniadaan (tentang hukum, peraturan).",
+      "contoh_kalimat": ""
+    },
+    {
+      "kata_baku": "absah",
+      "kata_tidak_baku": [
+        "syah"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "sah; berlaku; resmi.",
+      "contoh_kalimat": "Pernikahan mereka dinyatakan absah oleh pengadilan."
+    },
+    {
+      "kata_baku": "aktif",
+      "kata_tidak_baku": [
+        "aktip"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "giat bekerja atau berusaha; rajin dan sungguh-sungguh.",
+      "contoh_kalimat": "Siswa yang aktif di kelas biasanya berprestasi."
+    },
+    {
+      "kata_baku": "aktivitas",
+      "kata_tidak_baku": [
+        "aktifitas"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "kegiatan; keaktifan; kesibukan.",
+      "contoh_kalimat": "Aktivitas sehari-harinya sangat padat."
+    },
+    {
+      "kata_baku": "akseptasi",
+      "kata_tidak_baku": [
+        "akseptansi"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "penerimaan (wesel dan sebagainya).",
+      "contoh_kalimat": ""
+    },
+    {
+      "kata_baku": "ambigu",
+      "kata_tidak_baku": [
+        "ambigus"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "bermakna lebih dari satu sehingga kadang-kadang menimbulkan keraguan.",
+      "contoh_kalimat": "Pernyataan itu terasa ambigu."
+    },
+    {
+      "kata_baku": "ambulans",
+      "kata_tidak_baku": [
+        "ambulance",
+        "ambulan"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "kendaraan bermotor yang dilengkapi untuk merawat orang sakit.",
+      "contoh_kalimat": "Ambulans segera membawa korban ke rumah sakit."
+    },
+    {
+      "kata_baku": "analisis",
+      "kata_tidak_baku": [
+        "analisa"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "penyelidikan terhadap suatu peristiwa untuk mengetahui keadaan yang sebenarnya.",
+      "contoh_kalimat": "Analisis data dilakukan secara cermat."
+    },
+    {
+      "kata_baku": "antre",
+      "kata_tidak_baku": [
+        "antri"
+      ],
+      "kelas_kata": "verba",
+      "definisi": "berdiri dalam barisan menunggu giliran.",
+      "contoh_kalimat": "Mereka harus antre panjang untuk mendapatkan tiket."
+    },
+    {
+      "kata_baku": "apotek",
+      "kata_tidak_baku": [
+        "apotik"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "toko tempat meramu dan menjual obat berdasarkan resep dokter.",
+      "contoh_kalimat": "Dia membeli vitamin di apotek terdekat."
+    },
+    {
+      "kata_baku": "apoteker",
+      "kata_tidak_baku": [
+        "apotiker"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "ahli farmasi yang bertugas membuat dan menjual obat-obatan.",
+      "contoh_kalimat": "Apoteker menjelaskan dosis obat itu."
+    },
+    {
+      "kata_baku": "asas",
+      "kata_tidak_baku": [
+        "azas"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "dasar; alas; fondasi; prinsip.",
+      "contoh_kalimat": "Pancasila adalah asas negara Indonesia."
+    },
+    {
+      "kata_baku": "aset",
+      "kata_tidak_baku": [
+        "asset"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "sesuatu yang mempunyai nilai tukar; modal; kekayaan.",
+      "contoh_kalimat": "Karyawan adalah aset terpenting perusahaan."
+    },
+    {
+      "kata_baku": "atlet",
+      "kata_tidak_baku": [
+        "atlit"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "olahragawan yang terlatih untuk dipertandingkan.",
+      "contoh_kalimat": "Atlet bulu tangkis itu berhasil meraih medali emas."
+    },
+    {
+      "kata_baku": "atletik",
+      "kata_tidak_baku": [
+        "atlitik"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "cabang olahraga yang meliputi lari, lompat, lempar, dan jalan.",
+      "contoh_kalimat": "Ia berprestasi di cabang atletik."
+    },
+    {
+      "kata_baku": "azan",
+      "kata_tidak_baku": [
+        "adzan",
+        "adhan"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "seruan untuk mengajak orang Islam salat.",
+      "contoh_kalimat": "Azan magrib terdengar di seluruh kota."
+    },
+    {
+      "kata_baku": "bazar",
+      "kata_tidak_baku": [
+        "bazaar",
+        "bazzar"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "tempat berjual beli; pasar.",
+      "contoh_kalimat": "Sekolah mengadakan bazar amal untuk korban bencana."
+    },
+    {
+      "kata_baku": "bendahara",
+      "kata_tidak_baku": [
+        "bendara"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "pegawai yang bertugas mengurus keuangan.",
+      "contoh_kalimat": "Bendahara OSIS mencatat setiap pengeluaran."
+    },
+    {
+      "kata_baku": "bus",
+      "kata_tidak_baku": [
+        "bis"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "kendaraan bermotor besar beroda empat atau lebih untuk mengangkut penumpang.",
+      "contoh_kalimat": "Kami naik bus kota menuju terminal."
+    },
+    {
+      "kata_baku": "capai",
+      "kata_tidak_baku": [
+        "capek"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "lelah; payah (cak).",
+      "contoh_kalimat": "Dia merasa capai setelah bekerja seharian."
+    },
+    {
+      "kata_baku": "cedera",
+      "kata_tidak_baku": [
+        "cidera"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "luka atau kerusakan pada tubuh akibat kecelakaan.",
+      "contoh_kalimat": "Pemain itu mengalami cedera lutut."
+    },
+    {
+      "kata_baku": "cenderamata",
+      "kata_tidak_baku": [
+        "cinderamata"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "sesuatu yang diberikan sebagai kenang-kenangan.",
+      "contoh_kalimat": "Dia membawa cenderamata dari Bali."
+    },
+    {
+      "kata_baku": "cukup",
+      "kata_tidak_baku": [
+        "cukop"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "memadai; tidak kurang.",
+      "contoh_kalimat": "Waktu yang tersedia cukup untuk menyelesaikan tugas."
+    },
+    {
+      "kata_baku": "diagnosis",
+      "kata_tidak_baku": [
+        "diagnosa"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "penentuan jenis penyakit berdasarkan gejala yang ada.",
+      "contoh_kalimat": "Dokter menegakkan diagnosis setelah memeriksa pasien."
+    },
+    {
+      "kata_baku": "diet",
+      "kata_tidak_baku": [
+        "diit"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "makanan dan minuman yang dikonsumsi seseorang.",
+      "contoh_kalimat": "Ia menjalani diet ketat untuk menjaga kesehatan."
+    },
+    {
+      "kata_baku": "dokter",
+      "kata_tidak_baku": [
+        "doktor (sbg tenaga medis)"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "lulusan pendidikan kedokteran yang ahli dalam hal penyakit dan pengobatannya.",
+      "contoh_kalimat": "Dokter memeriksa pasien dengan teliti."
+    },
+    {
+      "kata_baku": "efektif",
+      "kata_tidak_baku": [
+        "efektip"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "ada efeknya; manjur; mujarab; dapat membawa hasil.",
+      "contoh_kalimat": "Metode belajar ini terbukti efektif."
+    },
+    {
+      "kata_baku": "efisien",
+      "kata_tidak_baku": [
+        "efisient"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "tepat atau sesuai untuk mengerjakan sesuatu dengan tidak membuang-buang waktu, tenaga, biaya.",
+      "contoh_kalimat": "Kerja tim yang efisien menghemat waktu."
+    },
+    {
+      "kata_baku": "ekuivalen",
+      "kata_tidak_baku": [
+        "ekuivalent"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "sepadan; setara.",
+      "contoh_kalimat": ""
+    },
+    {
+      "kata_baku": "faktor",
+      "kata_tidak_baku": [
+        "fakor"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "hal (keadaan, peristiwa) yang ikut menyebabkan (mempengaruhi) terjadinya sesuatu.",
+      "contoh_kalimat": "Faktor cuaca mempengaruhi hasil panen."
+    },
+    {
+      "kata_baku": "familier",
+      "kata_tidak_baku": [
+        "familiar"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "kenal baik; akrab; tidak resmi.",
+      "contoh_kalimat": "Suasana diskusi itu terasa familier."
+    },
+    {
+      "kata_baku": "februari",
+      "kata_tidak_baku": [
+        "pebruari",
+        "Pebruari"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "bulan kedua dalam tahun masehi.",
+      "contoh_kalimat": "Ujian nasional dijadwalkan pada bulan Februari."
+    },
+    {
+      "kata_baku": "foto",
+      "kata_tidak_baku": [
+        "photo"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "potret; gambar yang dibuat dengan kamera.",
+      "contoh_kalimat": "Tolong ambilkan foto kenangan kita."
+    },
+    {
+      "kata_baku": "frekuensi",
+      "kata_tidak_baku": [
+        "frekwensi"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "jumlah getaran per detik.",
+      "contoh_kalimat": "Radio itu beroperasi pada frekuensi 103 MHz."
+    },
+    {
+      "kata_baku": "gratis",
+      "kata_tidak_baku": [
+        "gratiz"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "cuma-cuma; tidak bayar.",
+      "contoh_kalimat": "Masuk ke museum itu gratis pada hari Minggu."
+    },
+    {
+      "kata_baku": "gubernur",
+      "kata_tidak_baku": [
+        "gebernur",
+        "guberner"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "kepala pemerintah daerah tingkat provinsi.",
+      "contoh_kalimat": "Gubernur meresmikan jembatan baru hari ini."
+    },
+    {
+      "kata_baku": "hakikat",
+      "kata_tidak_baku": [
+        "hakekat"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "intisari atau dasar; kenyataan yang sebenarnya.",
+      "contoh_kalimat": "Kita harus memahami hakikat ilmu pengetahuan."
+    },
+    {
+      "kata_baku": "hierarki",
+      "kata_tidak_baku": [
+        "hirarki"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "urutan tingkatan atau jenjang jabatan.",
+      "contoh_kalimat": "Hierarki organisasi harus dipahami setiap karyawan."
+    },
+    {
+      "kata_baku": "hipotesis",
+      "kata_tidak_baku": [
+        "hipotesa"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "sesuatu yang dianggap benar untuk alasan atau pengutaraan pendapat meskipun kebenarannya masih harus dibuktikan.",
+      "contoh_kalimat": "Peneliti mengajukan hipotesis yang akan diuji."
+    },
+    {
+      "kata_baku": "ide",
+      "kata_tidak_baku": [
+        "idee"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "rancangan yang tersusun di dalam pikiran; gagasan.",
+      "contoh_kalimat": "Ide brilian itu muncul secara tiba-tiba."
+    },
+    {
+      "kata_baku": "ijazah",
+      "kata_tidak_baku": [
+        "ijasah"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "surat tanda tamat belajar.",
+      "contoh_kalimat": "Ijazah SMA-nya hilang sehingga harus membuat duplikat."
+    },
+    {
+      "kata_baku": "imbau",
+      "kata_tidak_baku": [
+        "himbau"
+      ],
+      "kelas_kata": "verba",
+      "definisi": "meminta dengan sungguh-sungguh; mengajak.",
+      "contoh_kalimat": "Pemerintah mengimbau masyarakat untuk menjaga kesehatan."
+    },
+    {
+      "kata_baku": "insaf",
+      "kata_tidak_baku": [
+        "insyaf"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "sadar akan keadaan yang sebenarnya.",
+      "contoh_kalimat": "Ia insaf atas kesalahan yang pernah dilakukannya."
+    },
+    {
+      "kata_baku": "istri",
+      "kata_tidak_baku": [
+        "isteri"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "wanita yang telah menikah; pasangan hidup laki-laki.",
+      "contoh_kalimat": "Ia pergi bersama istri dan anaknya."
+    },
+    {
+      "kata_baku": "izin",
+      "kata_tidak_baku": [
+        "ijin"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "pernyataan mengabulkan (tidak melarang dsb); persetujuan.",
+      "contoh_kalimat": "Tolong minta izin kepada orang tua terlebih dahulu."
+    },
+    {
+      "kata_baku": "jadwal",
+      "kata_tidak_baku": [
+        "jadual"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "pembagian waktu berdasarkan rencana pengaturan urutan kerja.",
+      "contoh_kalimat": "Jadwal ujian telah diumumkan minggu lalu."
+    },
+    {
+      "kata_baku": "jenazah",
+      "kata_tidak_baku": [
+        "jenasah",
+        "jenazat"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "mayat manusia.",
+      "contoh_kalimat": "Jenazah korban kecelakaan segera dievakuasi."
+    },
+    {
+      "kata_baku": "jumat",
+      "kata_tidak_baku": [
+        "jum'at"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "hari keenam dalam seminggu.",
+      "contoh_kalimat": "Salat Jumat dilaksanakan setiap hari Jumat siang."
+    },
+    {
+      "kata_baku": "karier",
+      "kata_tidak_baku": [
+        "karir"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "perkembangan dan kemajuan dalam kehidupan, pekerjaan, jabatan.",
+      "contoh_kalimat": "Ia membangun karier dari bawah."
+    },
+    {
+      "kata_baku": "kategori",
+      "kata_tidak_baku": [
+        "katagori"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "golongan dari suatu jenis; kelas.",
+      "contoh_kalimat": "Soal ini masuk kategori tingkat menengah."
+    },
+    {
+      "kata_baku": "khatulistiwa",
+      "kata_tidak_baku": [
+        "katulistiwa"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "ekuator; garis yang membagi bumi menjadi belahan utara dan selatan.",
+      "contoh_kalimat": "Indonesia terletak di garis khatulistiwa."
+    },
+    {
+      "kata_baku": "khawatir",
+      "kata_tidak_baku": [
+        "kuatir",
+        "kawatir"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "takut (gelisah, cemas) terhadap sesuatu hal yang belum diketahui.",
+      "contoh_kalimat": "Ibu khawatir anaknya terlambat pulang."
+    },
+    {
+      "kata_baku": "klorofil",
+      "kata_tidak_baku": [
+        "klorofil",
+        "chlorophyll"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "zat hijau daun yang terdapat dalam kloroplas.",
+      "contoh_kalimat": "Klorofil berperan penting dalam fotosintesis."
+    },
+    {
+      "kata_baku": "komplet",
+      "kata_tidak_baku": [
+        "komplit"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "lengkap; sempurna.",
+      "contoh_kalimat": "Peralatan memasak di dapur itu sudah komplet."
+    },
+    {
+      "kata_baku": "konkret",
+      "kata_tidak_baku": [
+        "kongkrit",
+        "konkrit"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "nyata; benar-benar ada (berwujud, dapat dilihat, diraba).",
+      "contoh_kalimat": "Berikan contoh yang konkret agar mudah dipahami."
+    },
+    {
+      "kata_baku": "konsekuen",
+      "kata_tidak_baku": [
+        "konsekuwen"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "sesuai dengan apa yang telah dikatakan atau diperbuat sebelumnya; taat asas.",
+      "contoh_kalimat": "Ia konsekuen dengan keputusan yang telah dibuat."
+    },
+    {
+      "kata_baku": "koordinasi",
+      "kata_tidak_baku": [
+        "kordinasi"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "perihal mengatur suatu organisasi atau kegiatan sehingga peraturan dan tindakan yang akan dilaksanakan tidak saling bertentangan.",
+      "contoh_kalimat": "Koordinasi antar divisi sangat diperlukan."
+    },
+    {
+      "kata_baku": "kreativitas",
+      "kata_tidak_baku": [
+        "kreatifitas"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "kemampuan untuk menciptakan sesuatu yang baru.",
+      "contoh_kalimat": "Kreativitas anak harus terus diasah."
+    },
+    {
+      "kata_baku": "kuitansi",
+      "kata_tidak_baku": [
+        "kwitansi"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "surat bukti penerimaan uang.",
+      "contoh_kalimat": "Simpan kuitansi pembelian barang tersebut."
+    },
+    {
+      "kata_baku": "lembap",
+      "kata_tidak_baku": [
+        "lembab"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "agak basah; mengandung sedikit air.",
+      "contoh_kalimat": "Udara di daerah pantai terasa lembap."
+    },
+    {
+      "kata_baku": "legalisasi",
+      "kata_tidak_baku": [
+        "legalisir"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "perihal mengesahkan; pengesahan.",
+      "contoh_kalimat": "Legalisasi dokumen dilakukan di notaris."
+    },
+    {
+      "kata_baku": "manajer",
+      "kata_tidak_baku": [
+        "manager"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "orang yang berwenang dan bertanggung jawab membuat rencana.",
+      "contoh_kalimat": "Manajer cabang memimpin rapat pagi ini."
+    },
+    {
+      "kata_baku": "merek",
+      "kata_tidak_baku": [
+        "merk"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "tanda yang dikenakan oleh pengusaha pada barang yang dihasilkan.",
+      "contoh_kalimat": "Merek dagang harus didaftarkan ke DJKI."
+    },
+    {
+      "kata_baku": "metode",
+      "kata_tidak_baku": [
+        "metoda"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "cara teratur yang digunakan untuk melaksanakan suatu pekerjaan.",
+      "contoh_kalimat": "Guru menggunakan metode belajar yang inovatif."
+    },
+    {
+      "kata_baku": "motivasi",
+      "kata_tidak_baku": [
+        "mofivasi"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "dorongan yang timbul pada diri seseorang untuk melakukan sesuatu.",
+      "contoh_kalimat": "Motivasi belajar siswa sangat tinggi."
+    },
+    {
+      "kata_baku": "nasihat",
+      "kata_tidak_baku": [
+        "nasehat"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "ajaran atau pelajaran baik; anjuran (petunjuk, peringatan, teguran) yang baik.",
+      "contoh_kalimat": "Ia selalu mendengarkan nasihat orang tuanya."
+    },
+    {
+      "kata_baku": "negatif",
+      "kata_tidak_baku": [
+        "negatip"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "bersifat menyangkal; tidak menyetujui; tidak membenarkan.",
+      "contoh_kalimat": "Hasil tes HIV-nya negatif."
+    },
+    {
+      "kata_baku": "objek",
+      "kata_tidak_baku": [
+        "obyek"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "hal, perkara, atau orang yang menjadi pokok pembicaraan.",
+      "contoh_kalimat": "Objek penelitian ini adalah siswa SMA."
+    },
+    {
+      "kata_baku": "objektif",
+      "kata_tidak_baku": [
+        "obyektif"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "mengenai keadaan yang sebenarnya tanpa dipengaruhi pendapat atau pandangan pribadi.",
+      "contoh_kalimat": "Penilaian harus bersifat objektif."
+    },
+    {
+      "kata_baku": "paham",
+      "kata_tidak_baku": [
+        "faham"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "mengerti benar (akan); tahu benar (akan).",
+      "contoh_kalimat": "Apakah kamu sudah paham dengan materi ini?"
+    },
+    {
+      "kata_baku": "palsu",
+      "kata_tidak_baku": [
+        "palsuh"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "tiruan; tidak asli.",
+      "contoh_kalimat": "Uang palsu beredar di kota itu."
+    },
+    {
+      "kata_baku": "pikir",
+      "kata_tidak_baku": [
+        "fikir"
+      ],
+      "kelas_kata": "verba",
+      "definisi": "akal budi; ingatan; angan-angan.",
+      "contoh_kalimat": "Pikir dahulu sebelum bertindak."
+    },
+    {
+      "kata_baku": "positif",
+      "kata_tidak_baku": [
+        "positip"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "bersifat nyata dan pasti; membenarkan.",
+      "contoh_kalimat": "Berpikirlah secara positif agar hidup lebih bahagia."
+    },
+    {
+      "kata_baku": "praktik",
+      "kata_tidak_baku": [
+        "praktek"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "pelaksanaan secara nyata apa yang disebut dalam teori.",
+      "contoh_kalimat": "Mahasiswa kedokteran menjalani praktik klinik."
+    },
+    {
+      "kata_baku": "produktivitas",
+      "kata_tidak_baku": [
+        "produktifitas"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "kemampuan untuk menghasilkan sesuatu; daya produksi.",
+      "contoh_kalimat": "Produktivitas karyawan meningkat berkat pelatihan."
+    },
+    {
+      "kata_baku": "proyek",
+      "kata_tidak_baku": [
+        "projek"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "rencana pekerjaan dengan sasaran khusus dan dengan saat penyelesaian yang tegas.",
+      "contoh_kalimat": "Proyek pembangunan jalan tol sudah dimulai."
+    },
+    {
+      "kata_baku": "rapor",
+      "kata_tidak_baku": [
+        "raport"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "buku yang berisi keterangan mengenai nilai kepandaian dan prestasi belajar murid di sekolah.",
+      "contoh_kalimat": "Rapor semester ini nilainya memuaskan."
+    },
+    {
+      "kata_baku": "risiko",
+      "kata_tidak_baku": [
+        "resiko"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "akibat yang kurang menyenangkan (merugikan, membahayakan) dari suatu perbuatan atau tindakan.",
+      "contoh_kalimat": "Setiap keputusan mengandung risiko."
+    },
+    {
+      "kata_baku": "sah",
+      "kata_tidak_baku": [
+        "syah"
+      ],
+      "kelas_kata": "adjektiva",
+      "definisi": "diakui oleh pihak yang berwenang dan berlaku menurut hukum.",
+      "contoh_kalimat": "Pernikahan mereka telah dinyatakan sah."
+    },
+    {
+      "kata_baku": "sekadar",
+      "kata_tidak_baku": [
+        "sekedar"
+      ],
+      "kelas_kata": "adverbia",
+      "definisi": "secukupnya; hanya; semata-mata.",
+      "contoh_kalimat": "Ia datang sekadar untuk menyapa."
+    },
+    {
+      "kata_baku": "silakan",
+      "kata_tidak_baku": [
+        "silahkan"
+      ],
+      "kelas_kata": "verba",
+      "definisi": "kata yang diucapkan untuk mempersilakan seseorang melakukan sesuatu.",
+      "contoh_kalimat": "Silakan duduk!"
+    },
+    {
+      "kata_baku": "sistem",
+      "kata_tidak_baku": [
+        "sistim"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "perangkat unsur yang secara teratur saling berkaitan sehingga membentuk suatu totalitas.",
+      "contoh_kalimat": "Sistem pendidikan Indonesia terus diperbaiki."
+    },
+    {
+      "kata_baku": "subjek",
+      "kata_tidak_baku": [
+        "subyek"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "pokok pembicaraan; pokok kalimat.",
+      "contoh_kalimat": "Subjek kalimat tersebut adalah 'murid'."
+    },
+    {
+      "kata_baku": "survei",
+      "kata_tidak_baku": [
+        "survey"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "teknik riset dengan memberi batas yang jelas atas data.",
+      "contoh_kalimat": "Survei kepuasan pelanggan dilakukan setiap bulan."
+    },
+    {
+      "kata_baku": "teknik",
+      "kata_tidak_baku": [
+        "tehnik"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "pengetahuan dan kepandaian membuat sesuatu yang berkenaan dengan hasil industri.",
+      "contoh_kalimat": "Ia belajar teknik mesin di universitas terkemuka."
+    },
+    {
+      "kata_baku": "teladan",
+      "kata_tidak_baku": [
+        "tauladan"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "sesuatu yang patut ditiru atau baik untuk dicontoh.",
+      "contoh_kalimat": "Guru yang baik adalah teladan bagi siswanya."
+    },
+    {
+      "kata_baku": "tim",
+      "kata_tidak_baku": [
+        "team"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "kelompok yang bekerja sama.",
+      "contoh_kalimat": "Tim dokter bekerja keras untuk menyelamatkan pasien."
+    },
+    {
+      "kata_baku": "ubah",
+      "kata_tidak_baku": [
+        "rubah"
+      ],
+      "kelas_kata": "verba",
+      "definisi": "menjadi lain dari semula; berganti.",
+      "contoh_kalimat": "Kita perlu mengubah kebiasaan buruk."
+    },
+    {
+      "kata_baku": "utang",
+      "kata_tidak_baku": [
+        "hutang"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "uang yang dipinjam dari orang lain.",
+      "contoh_kalimat": "Ia harus melunasi utangnya sebelum akhir bulan."
+    },
+    {
+      "kata_baku": "wujud",
+      "kata_tidak_baku": [
+        "ujud"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "rupa dan bentuk yang dapat diraba dan dilihat.",
+      "contoh_kalimat": "Wujud nyata pengabdian adalah bekerja keras."
+    },
+    {
+      "kata_baku": "zaman",
+      "kata_tidak_baku": [
+        "jaman"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "jangka waktu yang panjang atau pendek yang menandai sesuatu.",
+      "contoh_kalimat": "Di zaman teknologi ini, informasi mudah diakses."
+    },
+    {
+      "kata_baku": "zona",
+      "kata_tidak_baku": [
+        "zone"
+      ],
+      "kelas_kata": "nomina",
+      "definisi": "daerah; kawasan.",
+      "contoh_kalimat": "Kawasan itu ditetapkan sebagai zona hijau."
+    }
+  ],
+  "daftar_kata_baku": [
+    {
+      "kata": "abstrak",
+      "kelas_kata": "adjektiva",
+      "definisi": "tidak berwujud; tidak berbentuk; mujarad; niskala.",
+      "contoh_kalimat": "Konsep itu terlalu abstrak untuk dipahami."
+    },
+    {
+      "kata": "adaptasi",
+      "kelas_kata": "nomina",
+      "definisi": "penyesuaian diri dengan lingkungan, pekerjaan, dan pelajaran.",
+      "contoh_kalimat": "Adaptasi makhluk hidup terhadap lingkungan adalah kunci kelangsungan hidup."
+    },
+    {
+      "kata": "administrasi",
+      "kelas_kata": "nomina",
+      "definisi": "usaha dan kegiatan yang meliputi penetapan tujuan serta penetapan cara-cara penyelenggaraan pembinaan organisasi.",
+      "contoh_kalimat": "Urusan administrasi selesaikan terlebih dahulu."
+    },
+    {
+      "kata": "akurat",
+      "kelas_kata": "adjektiva",
+      "definisi": "teliti; saksama; cermat; tepat benar.",
+      "contoh_kalimat": "Data yang digunakan harus akurat."
+    },
+    {
+      "kata": "alokasi",
+      "kelas_kata": "nomina",
+      "definisi": "penentuan banyaknya barang yang disediakan untuk suatu daerah; penjatahan.",
+      "contoh_kalimat": "Alokasi dana bantuan harus tepat sasaran."
+    },
+    {
+      "kata": "alternatif",
+      "kelas_kata": "nomina",
+      "definisi": "pilihan di antara dua atau beberapa kemungkinan.",
+      "contoh_kalimat": "Kita harus mencari alternatif solusi."
+    },
+    {
+      "kata": "aspirasi",
+      "kelas_kata": "nomina",
+      "definisi": "harapan dan tujuan untuk keberhasilan pada masa yang akan datang.",
+      "contoh_kalimat": "Aspirasi masyarakat harus didengar oleh pemimpin."
+    },
+    {
+      "kata": "bahasa",
+      "kelas_kata": "nomina",
+      "definisi": "sistem lambang bunyi yang arbitrer yang digunakan oleh anggota suatu masyarakat untuk bekerja sama, berinteraksi, dan mengidentifikasikan diri.",
+      "contoh_kalimat": "Bahasa Indonesia adalah bahasa persatuan."
+    },
+    {
+      "kata": "budaya",
+      "kelas_kata": "nomina",
+      "definisi": "pikiran; akal budi; hasil; adat istiadat.",
+      "contoh_kalimat": "Budaya lokal harus dilestarikan."
+    },
+    {
+      "kata": "demokrasi",
+      "kelas_kata": "nomina",
+      "definisi": "pemerintahan dari rakyat, oleh rakyat, dan untuk rakyat.",
+      "contoh_kalimat": "Indonesia menganut sistem demokrasi."
+    },
+    {
+      "kata": "ekonomi",
+      "kelas_kata": "nomina",
+      "definisi": "ilmu mengenai asas-asas produksi, distribusi, dan pemakaian barang-barang serta kekayaan.",
+      "contoh_kalimat": "Pertumbuhan ekonomi Indonesia cukup baik tahun ini."
+    },
+    {
+      "kata": "globalisasi",
+      "kelas_kata": "nomina",
+      "definisi": "proses masuknya ke ruang lingkup dunia.",
+      "contoh_kalimat": "Globalisasi membawa pengaruh besar terhadap budaya lokal."
+    },
+    {
+      "kata": "inovasi",
+      "kelas_kata": "nomina",
+      "definisi": "pemasukan atau pengenalan hal-hal yang baru; pembaharuan.",
+      "contoh_kalimat": "Inovasi teknologi terus berkembang pesat."
+    },
+    {
+      "kata": "infrastruktur",
+      "kelas_kata": "nomina",
+      "definisi": "prasarana; struktur dan fasilitas dasar yang diperlukan.",
+      "contoh_kalimat": "Pembangunan infrastruktur menjadi prioritas pemerintah."
+    },
+    {
+      "kata": "komunikasi",
+      "kelas_kata": "nomina",
+      "definisi": "pengiriman dan penerimaan pesan atau berita antara dua orang atau lebih sehingga pesan yang dimaksud dapat dipahami.",
+      "contoh_kalimat": "Komunikasi yang baik adalah kunci keberhasilan tim."
+    },
+    {
+      "kata": "lingkungan",
+      "kelas_kata": "nomina",
+      "definisi": "daerah (kawasan dsb) yang termasuk di dalamnya.",
+      "contoh_kalimat": "Menjaga lingkungan adalah tanggung jawab kita bersama."
+    },
+    {
+      "kata": "pendidikan",
+      "kelas_kata": "nomina",
+      "definisi": "proses pengubahan sikap dan tata laku seseorang atau kelompok orang dalam usaha mendewasakan manusia melalui upaya pengajaran dan pelatihan.",
+      "contoh_kalimat": "Pendidikan adalah investasi terbaik untuk masa depan."
+    },
+    {
+      "kata": "prestasi",
+      "kelas_kata": "nomina",
+      "definisi": "hasil yang telah dicapai (dari yang telah dilakukan, dikerjakan).",
+      "contoh_kalimat": "Prestasi akademiknya sangat membanggakan."
+    },
+    {
+      "kata": "teknologi",
+      "kelas_kata": "nomina",
+      "definisi": "metode ilmiah untuk mencapai tujuan praktis; ilmu pengetahuan terapan.",
+      "contoh_kalimat": "Kemajuan teknologi membawa perubahan besar dalam kehidupan."
+    },
+    {
+      "kata": "wawasan",
+      "kelas_kata": "nomina",
+      "definisi": "hasil mewawas; tinjauan; pandangan.",
+      "contoh_kalimat": "Membaca buku dapat memperluas wawasan kita."
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simulasi Ujian Kemahiran Berbahasa Indonesia (UKBI) — Latihan soal Seksi Mendengarkan, Merespons Kaidah, dan Membaca secara online dan gratis.">
+  <title>UKBI Simulasi — Ujian Kemahiran Berbahasa Indonesia</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ── Progress Bar (4px top) ─────────────────────── -->
+  <div id="progress-bar-outer" aria-hidden="true">
+    <div id="progress-bar-fill"></div>
+  </div>
+
+  <!-- ── App Header ─────────────────────────────────── -->
+  <header id="app-header" role="banner">
+    <div class="header-left">
+      <div class="header-logo">UKBI<span>SIM</span></div>
+      <div class="header-divider" aria-hidden="true"></div>
+      <span id="header-section-title" aria-live="polite">Simulasi Kemahiran Berbahasa Indonesia</span>
+    </div>
+    <div class="header-right">
+      <span id="header-peserta-name" aria-label="Nama peserta"></span>
+      <div class="timer-wrap" id="timer-wrap" aria-label="Waktu tersisa">
+        <svg class="timer-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M15 1H9v2h6V1zm-4 13h2V8h-2v6zm8.03-6.61l1.42-1.42c-.43-.51-.9-.99-1.41-1.41l-1.42 1.42C16.07 4.74 14.12 4 12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9 9-4.03 9-9c0-2.12-.74-4.07-1.97-5.61zM12 20c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/>
+        </svg>
+        <span id="header-timer" role="timer" aria-live="off">00:00</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Main ───────────────────────────────────────── -->
+  <main id="app-main" role="main">
+
+    <!-- ════════════════════════════════════════════════
+         VIEW: Landing
+    ════════════════════════════════════════════════ -->
+    <div id="view-landing" class="hidden" role="region" aria-label="Halaman Pembuka">
+      <div class="landing-card">
+        <div class="landing-badge">Bahan Ajar · UKBI Simulasi</div>
+        <div class="landing-logo-big">UKBI<span>SIM</span></div>
+        <p class="landing-subtitle">Simulasi Ujian Kemahiran Berbahasa Indonesia — 3 Seksi Wajib</p>
+
+        <!-- Seksi list -->
+        <div class="landing-seksi-list" role="list" aria-label="Daftar seksi ujian">
+          <div class="seksi-row" role="listitem">
+            <div class="seksi-num">I</div>
+            <span class="seksi-name">Mendengarkan</span>
+            <span class="seksi-meta">40 soal · 30 mnt</span>
+          </div>
+          <div class="seksi-row" role="listitem">
+            <div class="seksi-num">II</div>
+            <span class="seksi-name">Merespons Kaidah</span>
+            <span class="seksi-meta">25 soal · 20 mnt</span>
+          </div>
+          <div class="seksi-row" role="listitem">
+            <div class="seksi-num">III</div>
+            <span class="seksi-name">Membaca</span>
+            <span class="seksi-meta">40 soal · 45 mnt</span>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="landing-stats" role="group" aria-label="Statistik ujian">
+          <div class="stat-item">
+            <span class="stat-num">105</span>
+            <span class="stat-label">Total Soal</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">95</span>
+            <span class="stat-label">Menit</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">800</span>
+            <span class="stat-label">Skor Maks</span>
+          </div>
+        </div>
+
+        <!-- Resume banner -->
+        <div id="resume-banner" class="resume-banner hidden" role="alert">
+          <strong>Sesi sebelumnya ditemukan!</strong> Kamu sempat mengerjakan sebagai
+          <strong id="resume-name"></strong>. Lanjutkan?
+          <div class="resume-actions">
+            <button id="resume-btn">Lanjutkan Sesi</button>
+            <button id="resume-dismiss">Mulai Baru</button>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <label class="landing-form-label" for="landing-nama">Nama Peserta</label>
+        <input
+          type="text"
+          id="landing-nama"
+          placeholder="Masukkan nama lengkap Anda…"
+          autocomplete="name"
+          maxlength="80"
+          aria-required="true"
+        >
+        <button id="landing-mulai-btn" type="button" aria-label="Mulai ujian UKBI simulasi">
+          Mulai Ujian →
+        </button>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════
+         VIEW: Transition
+    ════════════════════════════════════════════════ -->
+    <div id="view-transition" class="hidden" role="region" aria-label="Layar Transisi Seksi">
+      <div class="transition-card">
+        <div class="trans-icon" aria-hidden="true">📋</div>
+        <h2 id="trans-title">Seksi —</h2>
+        <p id="trans-durasi" aria-label="Durasi dan jumlah soal"></p>
+        <p id="trans-instruksi"></p>
+        <button id="trans-mulai-btn" type="button">Mulai Sekarang →</button>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════
+         VIEW: Exam
+    ════════════════════════════════════════════════ -->
+    <div id="view-exam" class="hidden" role="region" aria-label="Layar Ujian">
+      <!-- Exam content (diisi oleh JS) -->
+      <div id="exam-content" aria-live="polite" aria-label="Soal ujian"></div>
+
+      <!-- Question Tracker -->
+      <nav id="tracker-bar" role="navigation" aria-label="Navigasi soal">
+        <div id="tracker-grid" role="list" aria-label="Daftar nomor soal"></div>
+      </nav>
+    </div>
+
+    <!-- ════════════════════════════════════════════════
+         VIEW: Result
+    ════════════════════════════════════════════════ -->
+    <div id="view-result" class="hidden" role="region" aria-label="Halaman Hasil Ujian">
+      <div class="result-container">
+
+        <!-- Header Card -->
+        <div class="result-header-card">
+          <div class="result-header-left">
+            <h1>Hasil Ujian Selesai</h1>
+            <p class="result-meta">
+              Peserta: <strong id="result-peserta"></strong>
+            </p>
+            <p class="result-meta" id="result-tgl"></p>
+            <p class="result-meta">Durasi total: <span id="result-durasi"></span></p>
+          </div>
+          <div class="result-header-right">
+            <div class="result-komposit-label">Skor Komposit UKBI</div>
+            <span id="result-komposit-skor" aria-label="Skor komposit"></span>
+            <div id="result-komposit-predikat" aria-label="Predikat UKBI"></div>
+          </div>
+        </div>
+
+        <!-- Per-seksi cards -->
+        <div class="result-cards" role="list" aria-label="Skor per seksi">
+          <div class="result-card" id="rc-s1" role="listitem" aria-label="Seksi 1"></div>
+          <div class="result-card" id="rc-s2" role="listitem" aria-label="Seksi 2"></div>
+          <div class="result-card" id="rc-s3" role="listitem" aria-label="Seksi 3"></div>
+        </div>
+
+        <!-- Actions -->
+        <div class="result-actions">
+          <button id="result-export-btn" type="button" aria-label="Unduh laporan ujian">
+            ⬇ Unduh Laporan
+          </button>
+          <button id="result-restart-btn" type="button" aria-label="Mulai ujian baru">
+            ↺ Ujian Baru
+          </button>
+        </div>
+
+        <!-- Review -->
+        <h2 class="result-review-title">Rincian Jawaban</h2>
+        <div id="result-review" aria-label="Tabel review jawaban"></div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── Scripts (order matters) ──────────────────────── -->
+  <script src="js/utils/timer.js"></script>
+  <script src="js/utils/audio.js"></script>
+  <script src="js/utils/storage.js"></script>
+  <script src="js/database_inline.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/sections/section1.js"></script>
+  <script src="js/sections/section2.js"></script>
+  <script src="js/sections/section3.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,458 @@
+[
+  {
+    "bab": "I",
+    "judul": "Pemakaian Huruf",
+    "seksi": "E",
+    "sub_judul": "Huruf Kapital",
+    "aturan": "Huruf kapital dipakai sebagai huruf pertama unsur nama orang, termasuk julukan.",
+    "contoh_benar": [
+      "Wage Rudolf Supratman",
+      "Dewi Sartika",
+      "Kha Daeng Buang"
+    ],
+    "contoh_salah": [
+      "wage rudolf supratman",
+      "dewi sartika"
+    ],
+    "catatan": "Nama orang selalu diawali huruf kapital, termasuk nama julukan."
+  },
+  {
+    "bab": "I",
+    "judul": "Pemakaian Huruf",
+    "seksi": "E",
+    "sub_judul": "Huruf Kapital",
+    "aturan": "Huruf kapital dipakai sebagai huruf pertama nama jabatan dan pangkat yang diikuti nama orang atau yang dipakai sebagai pengganti nama orang tertentu, nama instansi, atau nama tempat.",
+    "contoh_benar": [
+      "Wakil Presiden Adam Malik",
+      "Gubernur Papua",
+      "Laksamana Muda Udara Husein Sastranegara"
+    ],
+    "contoh_salah": [
+      "wakil presiden Adam Malik",
+      "gubernur Papua"
+    ],
+    "catatan": ""
+  },
+  {
+    "bab": "I",
+    "judul": "Pemakaian Huruf",
+    "seksi": "E",
+    "sub_judul": "Huruf Kapital",
+    "aturan": "Huruf kapital dipakai sebagai huruf pertama kata pada awal kalimat.",
+    "contoh_benar": [
+      "Dia membaca buku.",
+      "Apa yang dimaksud dengan geografi?"
+    ],
+    "contoh_salah": [
+      "dia membaca buku."
+    ],
+    "catatan": ""
+  },
+  {
+    "bab": "I",
+    "judul": "Pemakaian Huruf",
+    "seksi": "E",
+    "sub_judul": "Huruf Kapital",
+    "aturan": "Huruf kapital tidak dipakai sebagai huruf pertama kata yang menunjukkan hubungan kekerabatan (seperti bapak, ibu, saudara, kakak, adik, dan paman) yang tidak diikuti nama orang atau tidak dipakai sebagai sapaan.",
+    "contoh_benar": [
+      "Kita harus menghormati bapak dan ibu kita.",
+      "Semua kakak dan adiknya hadir."
+    ],
+    "contoh_salah": [
+      "Kita harus menghormati Bapak dan Ibu kita."
+    ],
+    "catatan": "Kata kekerabatan tanpa nama = huruf kecil."
+  },
+  {
+    "bab": "I",
+    "judul": "Pemakaian Huruf",
+    "seksi": "F",
+    "sub_judul": "Huruf Miring",
+    "aturan": "Huruf miring dipakai untuk menuliskan judul buku, nama majalah, atau nama surat kabar yang dikutip dalam tulisan.",
+    "contoh_benar": [
+      "Majalah Bahasa dan Sastra terbit pada tahun 1975.",
+      "Saya membaca buku Negarakertagama karangan Empu Prapanca."
+    ],
+    "contoh_salah": [
+      "Majalah \"Bahasa dan Sastra\" terbit pada tahun 1975."
+    ],
+    "catatan": "Judul buku/majalah ditulis miring, bukan dalam tanda petik."
+  },
+  {
+    "bab": "I",
+    "judul": "Pemakaian Huruf",
+    "seksi": "F",
+    "sub_judul": "Huruf Miring",
+    "aturan": "Huruf miring dipakai untuk menegaskan atau mengkhususkan huruf, bagian kata, kata, atau kelompok kata dalam teks.",
+    "contoh_benar": [
+      "Huruf terakhir kata adik adalah k.",
+      "Dalam pengembangan bahasa perlu diperhatikan masalah baku tidaknya kata."
+    ],
+    "contoh_salah": [],
+    "catatan": ""
+  },
+  {
+    "bab": "II",
+    "judul": "Penulisan Kata",
+    "seksi": "B",
+    "sub_judul": "Kata Berimbuhan",
+    "aturan": "Imbuhan (awalan, sisipan, akhiran, serta gabungan awalan dan akhiran) ditulis serangkai dengan bentuk dasarnya.",
+    "contoh_benar": [
+      "berkelanjutan",
+      "pelajaran",
+      "mempermasalahkan",
+      "keterangan",
+      "pemberitahuan"
+    ],
+    "contoh_salah": [
+      "ber-kelanjutan",
+      "mem-permasalahkan"
+    ],
+    "catatan": "Imbuhan ditulis serangkai, tidak pakai tanda hubung."
+  },
+  {
+    "bab": "II",
+    "judul": "Penulisan Kata",
+    "seksi": "B",
+    "sub_judul": "Kata Berimbuhan",
+    "aturan": "Awalan atau akhiran ditulis serangkai dengan kata yang langsung mengikuti atau mendahuluinya jika bentuk dasarnya berupa gabungan kata.",
+    "contoh_benar": [
+      "bertepuk tangan",
+      "menganak sungai",
+      "sebar luaskan"
+    ],
+    "contoh_salah": [
+      "ber-tepuk tangan"
+    ],
+    "catatan": ""
+  },
+  {
+    "bab": "II",
+    "judul": "Penulisan Kata",
+    "seksi": "D",
+    "sub_judul": "Gabungan Kata",
+    "aturan": "Unsur gabungan kata yang lazim disebut kata majemuk, termasuk istilah khusus, ditulis terpisah.",
+    "contoh_benar": [
+      "duta besar",
+      "model linear",
+      "kambing hitam",
+      "orang tua",
+      "simpang siur"
+    ],
+    "contoh_salah": [
+      "dutabesar",
+      "kambing-hitam"
+    ],
+    "catatan": "Kata majemuk ditulis terpisah kecuali yang sudah padu."
+  },
+  {
+    "bab": "II",
+    "judul": "Penulisan Kata",
+    "seksi": "D",
+    "sub_judul": "Gabungan Kata",
+    "aturan": "Gabungan kata yang sudah padu benar ditulis serangkai.",
+    "contoh_benar": [
+      "acapkali",
+      "adakalanya",
+      "apalagi",
+      "bagaimana",
+      "barangkali",
+      "bilamana",
+      "daripada",
+      "dukacita",
+      "kacamata",
+      "kasatmata",
+      "kilometer",
+      "manasuka",
+      "matahari",
+      "olahraga",
+      "padahal",
+      "paramedis",
+      "peribahasa",
+      "puspawarna",
+      "saputangan",
+      "sediakala",
+      "segitiga",
+      "sukarela",
+      "sukacita",
+      "syahbandar",
+      "waspadai",
+      "wiraswasta"
+    ],
+    "contoh_salah": [
+      "olah raga",
+      "mata hari",
+      "kaca mata",
+      "suka rela"
+    ],
+    "catatan": "Daftar kata padu yang sudah baku dalam EYD V."
+  },
+  {
+    "bab": "II",
+    "judul": "Penulisan Kata",
+    "seksi": "F",
+    "sub_judul": "Kata Depan",
+    "aturan": "Kata depan, seperti di, ke, dan dari, ditulis terpisah dari kata yang mengikutinya.",
+    "contoh_benar": [
+      "Bermalam di sana.",
+      "Dia berasal dari Jawa Barat.",
+      "Ke mana dia pergi?",
+      "di rumah",
+      "ke pasar",
+      "dari desa"
+    ],
+    "contoh_salah": [
+      "Bermalam disana.",
+      "Kemana dia pergi?",
+      "dirumah",
+      "kepasar",
+      "daridesa"
+    ],
+    "catatan": "di/ke/dari sebagai kata depan selalu terpisah dari kata berikutnya."
+  },
+  {
+    "bab": "II",
+    "judul": "Penulisan Kata",
+    "seksi": "G",
+    "sub_judul": "Partikel",
+    "aturan": "Partikel -lah, -kah, dan -tah ditulis serangkai dengan kata yang mendahuluinya.",
+    "contoh_benar": [
+      "Bacalah buku itu baik-baik!",
+      "Apakah yang tersirat dalam surat itu?",
+      "Apakah benar ia lulusan universitas itu?"
+    ],
+    "contoh_salah": [
+      "Baca lah buku itu!",
+      "Apa kah yang tersirat?"
+    ],
+    "catatan": "Partikel -lah/-kah/-tah serangkai."
+  },
+  {
+    "bab": "II",
+    "judul": "Penulisan Kata",
+    "seksi": "G",
+    "sub_judul": "Partikel",
+    "aturan": "Partikel pun ditulis terpisah dari kata yang mendahuluinya.",
+    "contoh_benar": [
+      "Apa pun yang terjadi, kami siap.",
+      "Jika kamu pergi, aku pun akan ikut.",
+      "Satu pun tidak ada yang lolos."
+    ],
+    "contoh_salah": [
+      "Apapun yang terjadi.",
+      "akupun akan ikut."
+    ],
+    "catatan": "Pun selalu terpisah, kecuali dalam kata: adapun, andaipun, ataupun, bagaimanapun, biarpun, kalaupun, kendatipun, maupun, meskipun, sekalipun, sungguhpun, walaupun."
+  },
+  {
+    "bab": "II",
+    "judul": "Penulisan Kata",
+    "seksi": "H",
+    "sub_judul": "Singkatan dan Akronim",
+    "aturan": "Singkatan nama orang, gelar, sapaan, jabatan, atau pangkat diikuti dengan tanda titik pada setiap unsur singkatan itu.",
+    "contoh_benar": [
+      "A.H. Nasution",
+      "H. Hamid",
+      "Suman Hs.",
+      "W.R. Supratman"
+    ],
+    "contoh_salah": [
+      "AH Nasution",
+      "H Hamid"
+    ],
+    "catatan": ""
+  },
+  {
+    "bab": "II",
+    "judul": "Penulisan Kata",
+    "seksi": "H",
+    "sub_judul": "Singkatan dan Akronim",
+    "aturan": "Akronim nama diri yang terdiri atas huruf awal setiap kata ditulis seluruhnya dengan huruf kapital tanpa tanda titik.",
+    "contoh_benar": [
+      "BIG (Badan Informasi Geospasial)",
+      "LIPI (Lembaga Ilmu Pengetahuan Indonesia)",
+      "LAN (Lembaga Administrasi Negara)"
+    ],
+    "contoh_salah": [
+      "B.I.G.",
+      "L.I.P.I."
+    ],
+    "catatan": "Akronim kapital semua tanpa titik."
+  },
+  {
+    "bab": "III",
+    "judul": "Pemakaian Tanda Baca",
+    "seksi": "A",
+    "sub_judul": "Tanda Titik",
+    "aturan": "Tanda titik dipakai pada akhir kalimat pernyataan.",
+    "contoh_benar": [
+      "Mereka akan datang ke pesta itu.",
+      "Saya suka makan nasi goreng."
+    ],
+    "contoh_salah": [
+      "Mereka akan datang ke pesta itu"
+    ],
+    "catatan": "Kalimat pernyataan harus diakhiri tanda titik."
+  },
+  {
+    "bab": "III",
+    "judul": "Pemakaian Tanda Baca",
+    "seksi": "A",
+    "sub_judul": "Tanda Titik",
+    "aturan": "Tanda titik tidak dipakai pada akhir judul yang merupakan kepala karangan, kepala ilustrasi, tabel, dan sebagainya.",
+    "contoh_benar": [
+      "Acara Kunjungan Presiden ke Universitas Riau",
+      "Cara Pengisian Formulir"
+    ],
+    "contoh_salah": [
+      "Acara Kunjungan Presiden ke Universitas Riau.",
+      "Cara Pengisian Formulir."
+    ],
+    "catatan": "Judul tidak diakhiri tanda titik."
+  },
+  {
+    "bab": "III",
+    "judul": "Pemakaian Tanda Baca",
+    "seksi": "B",
+    "sub_judul": "Tanda Koma",
+    "aturan": "Tanda koma dipakai di antara unsur-unsur dalam suatu pemerincian atau pembilangan yang mengandung lebih dari dua unsur.",
+    "contoh_benar": [
+      "Saya membeli buku, pena, dan kertas.",
+      "Buku, majalah, dan jurnal termasuk sumber kepustakaan."
+    ],
+    "contoh_salah": [
+      "Saya membeli buku pena dan kertas."
+    ],
+    "catatan": "Gunakan koma sebelum 'dan' dalam daftar tiga unsur atau lebih."
+  },
+  {
+    "bab": "III",
+    "judul": "Pemakaian Tanda Baca",
+    "seksi": "B",
+    "sub_judul": "Tanda Koma",
+    "aturan": "Tanda koma dipakai sebelum kata penghubung, seperti tetapi, melainkan, dan sedangkan, dalam kalimat majemuk (setara).",
+    "contoh_benar": [
+      "Saya ingin membeli kamera itu, tetapi uang saya tidak cukup.",
+      "Ini bukan milik saya, melainkan milik ayah saya."
+    ],
+    "contoh_salah": [
+      "Saya ingin membeli kamera itu tetapi uang saya tidak cukup."
+    ],
+    "catatan": "Koma sebelum tetapi/melainkan/sedangkan."
+  },
+  {
+    "bab": "III",
+    "judul": "Pemakaian Tanda Baca",
+    "seksi": "B",
+    "sub_judul": "Tanda Koma",
+    "aturan": "Tanda koma tidak dipakai untuk memisahkan anak kalimat dari induk kalimat jika anak kalimat itu mengiringi induk kalimatnya.",
+    "contoh_benar": [
+      "Dia datang karena kami mengundangnya.",
+      "Kami mengundangnya karena dia punya ilmu yang bermanfaat."
+    ],
+    "contoh_salah": [
+      "Dia datang, karena kami mengundangnya."
+    ],
+    "catatan": "Anak kalimat di belakang induk tidak perlu koma pemisah."
+  },
+  {
+    "bab": "III",
+    "judul": "Pemakaian Tanda Baca",
+    "seksi": "D",
+    "sub_judul": "Tanda Titik Dua",
+    "aturan": "Tanda titik dua dipakai pada akhir suatu pernyataan lengkap yang diikuti pemerincian atau penjelasan.",
+    "contoh_benar": [
+      "Mereka memerlukan perabot rumah tangga: kursi, meja, dan lemari.",
+      "Hanya ada dua pilihan bagi pejuang kemerdekaan itu: hidup atau mati."
+    ],
+    "contoh_salah": [
+      "Mereka memerlukan: kursi, meja, dan lemari."
+    ],
+    "catatan": "Tanda titik dua tidak dipakai jika pernyataan sebelumnya tidak lengkap."
+  },
+  {
+    "bab": "III",
+    "judul": "Pemakaian Tanda Baca",
+    "seksi": "E",
+    "sub_judul": "Tanda Hubung",
+    "aturan": "Tanda hubung dipakai untuk menyambung unsur kata ulang.",
+    "contoh_benar": [
+      "anak-anak",
+      "berlari-lari",
+      "sayur-mayur",
+      "ramah-tamah",
+      "lauk-pauk"
+    ],
+    "contoh_salah": [
+      "anakanak",
+      "berlarilarilari",
+      "sayur mayur"
+    ],
+    "catatan": "Kata ulang wajib pakai tanda hubung."
+  },
+  {
+    "bab": "III",
+    "judul": "Pemakaian Tanda Baca",
+    "seksi": "J",
+    "sub_judul": "Tanda Petik",
+    "aturan": "Tanda petik dipakai untuk mengapit petikan langsung yang berasal dari pembicaraan, naskah, atau bahan tertulis lain.",
+    "contoh_benar": [
+      "\"Merdeka atau mati!\" seru Bung Tomo dalam pidatonya.",
+      "\"Sudah lama tidak bertemu,\" katanya."
+    ],
+    "contoh_salah": [
+      "Merdeka atau mati! seru Bung Tomo."
+    ],
+    "catatan": "Petikan langsung diapit tanda petik ganda."
+  },
+  {
+    "bab": "IV",
+    "judul": "Penulisan Unsur Serapan",
+    "seksi": "A",
+    "sub_judul": "Kaidah Penulisan Unsur Serapan",
+    "aturan": "Kata serapan dari bahasa asing dan bahasa daerah disesuaikan ejaannya dengan kaidah bahasa Indonesia.",
+    "contoh_benar": [
+      "apotek (bukan apotik)",
+      "analisis (bukan analisa)",
+      "teknik (bukan tehnik)",
+      "jadwal (bukan jadual)",
+      "metode (bukan metoda)",
+      "sistem (bukan sistim)",
+      "izin (bukan ijin)",
+      "sah (bukan syah)",
+      "foto (bukan photo)",
+      "tim (bukan team)"
+    ],
+    "contoh_salah": [
+      "apotik",
+      "analisa",
+      "tehnik",
+      "jadual",
+      "metoda",
+      "sistim",
+      "ijin",
+      "syah",
+      "photo",
+      "team"
+    ],
+    "catatan": "Daftar kata baku sesuai EYD Edisi V."
+  },
+  {
+    "bab": "IV",
+    "judul": "Penulisan Unsur Serapan",
+    "seksi": "A",
+    "sub_judul": "Kaidah Penulisan Unsur Serapan",
+    "aturan": "Gugus konsonan ck dalam bahasa asing diserap menjadi k.",
+    "contoh_benar": [
+      "akuarium (aquarium)",
+      "akustik (acoustic)",
+      "aksen (accent)",
+      "akting (acting)"
+    ],
+    "contoh_salah": [
+      "aquarium",
+      "acoustic"
+    ],
+    "catatan": "qu- → kw-, ck → k, dll."
+  }
+]

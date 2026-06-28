@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UKBI Sertifikasi - Seksi III: Membaca</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#1a0b00",
+                    "secondary-fixed": "#e2e2e2",
+                    "surface-variant": "#e3e2e5",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "on-primary-container": "#768dad",
+                    "surface-container-low": "#f5f3f6",
+                    "on-tertiary": "#ffffff",
+                    "secondary-container": "#dfe0e0",
+                    "surface-dim": "#dbd9dc",
+                    "surface-container-highest": "#e3e2e5",
+                    "surface": "#faf9fb",
+                    "on-secondary-container": "#616363",
+                    "primary": "#000f22",
+                    "on-tertiary-container": "#ae835a",
+                    "on-primary-fixed": "#001c37",
+                    "primary-container": "#0a2540",
+                    "secondary-fixed-dim": "#c6c6c7",
+                    "tertiary-fixed": "#ffdcbe",
+                    "inverse-on-surface": "#f2f0f3",
+                    "surface-container": "#efedf0",
+                    "on-surface": "#1b1c1e",
+                    "on-secondary-fixed-variant": "#454747",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#381d00",
+                    "on-tertiary-fixed-variant": "#613f1c",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#b0c8eb",
+                    "surface-container-high": "#e9e8ea",
+                    "tertiary-fixed-dim": "#eebd90",
+                    "on-background": "#1b1c1e",
+                    "background": "#faf9fb",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#c4c6ce",
+                    "inverse-surface": "#2f3033",
+                    "primary-fixed": "#d2e4ff",
+                    "surface-tint": "#49607e",
+                    "primary-fixed-dim": "#b0c8eb",
+                    "outline": "#74777e",
+                    "secondary": "#5d5f5f",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#314865",
+                    "on-surface-variant": "#43474d",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#faf9fb",
+                    "on-tertiary-fixed": "#2d1600"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sidebar-width": "320px",
+                    "grid-gutter": "1rem",
+                    "container-padding": "2rem",
+                    "unit": "4px",
+                    "stack-gap": "1.5rem"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "mono-timer": ["JetBrains Mono"],
+                    "label-bold": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "display": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f6f8;
+            overflow: hidden;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 10px;
+        }
+        .split-pane {
+            height: calc(100vh - 64px - 80px); /* Adjust for TopAppBar and BottomNavBar height */
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-choice {
+            border: 2px solid #000f22 !important;
+            background-color: #d2e4ff;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Progress Bar (Fixed at the very top) -->
+<div class="fixed top-0 left-0 w-full h-1 bg-surface-container z-[60]">
+<div class="h-full bg-primary" style="width: 65%;"></div>
+</div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 h-16 bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline flex justify-between items-center px-container-padding">
+<div class="flex items-center gap-4">
+<h1 class="font-headline-lg text-headline-lg font-bold text-primary dark:text-primary-fixed">UKBI Sertifikasi</h1>
+<div class="h-8 w-px bg-outline-variant mx-2"></div>
+<span class="font-headline-md text-headline-md font-semibold text-on-surface-variant">Seksi III: Membaca</span>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2 px-4 py-1.5 bg-surface-container-high rounded-full">
+<span class="material-symbols-outlined text-primary" data-icon="timer">timer</span>
+<span class="font-mono-timer text-mono-timer text-primary">24:12</span>
+</div>
+<div class="cursor-pointer active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-on-surface-variant text-[32px]" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+</header>
+<!-- Main Content: Split-Pane Layout -->
+<main class="mt-16 split-pane flex w-full">
+<!-- Left Column: Reading Passage -->
+<section class="w-1/2 h-full border-r border-outline-variant bg-surface-container-lowest overflow-y-auto custom-scrollbar p-12">
+<div class="max-w-[800px] mx-auto">
+<header class="mb-8">
+<h2 class="font-display text-display text-primary mb-2">Inovasi Teknologi di Era Digital</h2>
+<div class="h-1 w-16 bg-primary"></div>
+</header>
+<article class="font-body-lg text-body-lg text-on-surface space-y-6 leading-relaxed text-justify">
+<p>
+                        Kemajuan teknologi informasi dan komunikasi telah mengubah paradigma interaksi sosial dalam masyarakat modern. Era digital tidak hanya menawarkan kecepatan dalam bertukar informasi, tetapi juga menciptakan ekosistem baru yang menuntut adaptasi berkelanjutan dari setiap individu. Perubahan ini menyentuh hampir seluruh aspek kehidupan, mulai dari cara kita bekerja hingga cara kita menjaga hubungan interpersonal.
+                    </p>
+<p class="p-6 bg-surface-container rounded-lg border-l-4 border-primary italic">
+                        Di tengah arus inovasi yang kencang, masyarakat sering kali dihadapkan pada tantangan untuk menyaring informasi yang valid di tengah ledakan data. Literasi digital menjadi kunci utama dalam menavigasi kompleksitas era ini. Tanpa pemahaman yang memadai tentang cara kerja teknologi, risiko disinformasi dan penyalahgunaan data pribadi akan semakin meningkat, yang pada akhirnya dapat merusak tatanan sosial yang telah ada.
+                    </p>
+<p>
+                        Seiring berjalannya waktu, integrasi kecerdasan buatan (AI) dalam sistem pelayanan publik dan industri mulai menunjukkan hasil yang signifikan. Efisiensi operasional meningkat secara drastis, namun hal ini juga membawa kekhawatiran baru terkait pergeseran peran tenaga kerja manusia. Oleh karena itu, sinergi antara kemampuan teknis mesin dan kecerdasan emosional manusia menjadi fokus utama dalam perancangan strategi pembangunan di masa depan.
+                    </p>
+<p>
+                        Pemerintah dan lembaga pendidikan memiliki tanggung jawab besar untuk menyiapkan infrastruktur serta kurikulum yang relevan dengan kebutuhan industri masa kini. Langkah preventif dan edukatif perlu dilakukan secara masif agar kesenjangan digital antarwilayah dapat diminimalisasi, sehingga seluruh lapisan masyarakat dapat merasakan manfaat nyata dari perkembangan teknologi yang sedang berlangsung.
+                    </p>
+</article>
+<div class="mt-12 py-8 border-t border-outline-variant">
+<p class="text-label-sm text-on-surface-variant italic">Sumber: Adaptasi Jurnal Teknologi dan Masyarakat, 2023.</p>
+</div>
+</div>
+</section>
+<!-- Right Column: Question Area -->
+<section class="w-1/2 h-full bg-surface-container-low overflow-y-auto custom-scrollbar p-12">
+<div class="max-w-[600px] mx-auto space-y-8">
+<!-- Question Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-10 shadow-sm">
+<div class="flex items-center justify-between mb-6">
+<span class="px-3 py-1 bg-primary text-on-primary rounded text-label-bold">Soal 41</span>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="flag">flag</span>
+<span class="text-label-bold">Ragu-ragu</span>
+</button>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-primary mb-8 leading-tight">
+                        Apa ide pokok dari paragraf kedua teks di samping?
+                    </h3>
+<div class="space-y-4">
+<!-- Option A -->
+<label class="group flex items-start gap-4 p-5 rounded-lg border border-outline-variant hover:bg-surface-container-high cursor-pointer transition-all active:scale-[0.98]">
+<input class="mt-1 w-5 h-5 text-primary focus:ring-primary" name="question-41" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-bold text-primary mb-1">Pilihan A</span>
+<span class="font-body-md text-body-md text-on-surface">Pentingnya literasi digital dalam menghadapi ledakan informasi di era digital.</span>
+</div>
+</label>
+<!-- Option B -->
+<label class="group flex items-start gap-4 p-5 rounded-lg border border-outline-variant hover:bg-surface-container-high cursor-pointer transition-all active:scale-[0.98]">
+<input class="mt-1 w-5 h-5 text-primary focus:ring-primary" name="question-41" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-bold text-primary mb-1">Pilihan B</span>
+<span class="font-body-md text-body-md text-on-surface">Risiko penyalahgunaan data pribadi yang dialami oleh masyarakat modern.</span>
+</div>
+</label>
+<!-- Option C -->
+<label class="group flex items-start gap-4 p-5 rounded-lg border border-outline-variant hover:bg-surface-container-high cursor-pointer transition-all active:scale-[0.98]">
+<input class="mt-1 w-5 h-5 text-primary focus:ring-primary" name="question-41" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-bold text-primary mb-1">Pilihan C</span>
+<span class="font-body-md text-body-md text-on-surface">Penerapan kecerdasan buatan dalam berbagai sistem pelayanan publik.</span>
+</div>
+</label>
+<!-- Option D -->
+<label class="group flex items-start gap-4 p-5 rounded-lg border border-outline-variant hover:bg-surface-container-high cursor-pointer transition-all active:scale-[0.98]">
+<input class="mt-1 w-5 h-5 text-primary focus:ring-primary" name="question-41" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-bold text-primary mb-1">Pilihan D</span>
+<span class="font-body-md text-body-md text-on-surface">Tanggung jawab pemerintah dalam membangun infrastruktur teknologi informasi.</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Navigation Sidebar/Footer (Integrated Question Tracker) -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-6">
+<h4 class="font-label-bold text-on-surface-variant mb-4 uppercase tracking-wider">Navigasi Soal (41 - 60)</h4>
+<div class="grid grid-cols-10 gap-2">
+<!-- Answered -->
+<div class="aspect-square flex items-center justify-center border border-outline text-label-sm rounded-sm hover:bg-surface-container-high cursor-pointer">31</div>
+<div class="aspect-square flex items-center justify-center border border-outline text-label-sm rounded-sm hover:bg-surface-container-high cursor-pointer">32</div>
+<!-- ... skipped for brevity -->
+<div class="aspect-square flex items-center justify-center bg-primary text-white text-label-sm rounded-sm cursor-pointer">41</div>
+<div class="aspect-square flex items-center justify-center border-2 border-primary text-primary font-bold text-label-sm rounded-sm cursor-pointer">42</div>
+<div class="aspect-square flex items-center justify-center border border-outline text-label-sm rounded-sm hover:bg-surface-container-high cursor-pointer">43</div>
+<div class="aspect-square flex items-center justify-center border border-outline text-label-sm rounded-sm hover:bg-surface-container-high cursor-pointer">44</div>
+<div class="aspect-square flex items-center justify-center bg-tertiary-fixed text-on-tertiary-fixed border border-on-tertiary-fixed-variant text-label-sm rounded-sm cursor-pointer">
+<span class="material-symbols-outlined text-[12px]" data-icon="flag" style="font-variation-settings: 'FILL' 1;">flag</span>45
+                        </div>
+<div class="aspect-square flex items-center justify-center border border-outline text-label-sm rounded-sm hover:bg-surface-container-high cursor-pointer">46</div>
+<div class="aspect-square flex items-center justify-center border border-outline text-label-sm rounded-sm hover:bg-surface-container-high cursor-pointer">47</div>
+<div class="aspect-square flex items-center justify-center border border-outline text-label-sm rounded-sm hover:bg-surface-container-high cursor-pointer">48</div>
+<div class="aspect-square flex items-center justify-center border border-outline text-label-sm rounded-sm hover:bg-surface-container-high cursor-pointer">49</div>
+<div class="aspect-square flex items-center justify-center border border-outline text-label-sm rounded-sm hover:bg-surface-container-high cursor-pointer">50</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 bg-surface dark:bg-surface-dim border-t border-outline-variant dark:border-outline flex justify-around items-center h-20 px-4">
+<!-- Kembali -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-highest transition-all active:scale-95 duration-200">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed" data-icon="arrow_back">arrow_back</span>
+<span class="font-label-bold text-label-bold text-primary dark:text-primary-fixed">Kembali</span>
+</button>
+<!-- Ragu-ragu -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-highest transition-all active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="flag">flag</span>
+<span class="font-label-bold text-label-bold">Ragu-ragu</span>
+</button>
+<!-- Navigasi -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-highest transition-all active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="font-label-bold text-label-bold">Navigasi</span>
+</button>
+<!-- Lanjut (Active State Logic) -->
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-lg p-2 px-6 hover:bg-surface-container-highest transition-all active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+<span class="font-label-bold text-label-bold">Lanjut</span>
+</button>
+</nav>
+<script>
+        // Simple Interaction for Choice Selectors
+        document.querySelectorAll('label').forEach(label => {
+            label.addEventListener('click', function() {
+                // Clear others
+                document.querySelectorAll('label').forEach(l => l.classList.remove('active-choice'));
+                // Add active to this
+                this.classList.add('active-choice');
+            });
+        });
+
+        // Atmospheric effect: Subtle grain overlay
+        const grainOverlay = document.createElement('div');
+        grainOverlay.style.position = 'fixed';
+        grainOverlay.style.top = '0';
+        grainOverlay.style.left = '0';
+        grainOverlay.style.width = '100%';
+        grainOverlay.style.height</script></body></html>

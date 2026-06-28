@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UKBI Sertifikasi - Seksi II</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#1a0b00",
+                    "secondary-fixed": "#e2e2e2",
+                    "surface-variant": "#e3e2e5",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "on-primary-container": "#768dad",
+                    "surface-container-low": "#f5f3f6",
+                    "on-tertiary": "#ffffff",
+                    "secondary-container": "#dfe0e0",
+                    "surface-dim": "#dbd9dc",
+                    "surface-container-highest": "#e3e2e5",
+                    "surface": "#faf9fb",
+                    "on-secondary-container": "#616363",
+                    "primary": "#000f22",
+                    "on-tertiary-container": "#ae835a",
+                    "on-primary-fixed": "#001c37",
+                    "primary-container": "#0a2540",
+                    "secondary-fixed-dim": "#c6c6c7",
+                    "tertiary-fixed": "#ffdcbe",
+                    "inverse-on-surface": "#f2f0f3",
+                    "surface-container": "#efedf0",
+                    "on-surface": "#1b1c1e",
+                    "on-secondary-fixed-variant": "#454747",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#381d00",
+                    "on-tertiary-fixed-variant": "#613f1c",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#b0c8eb",
+                    "surface-container-high": "#e9e8ea",
+                    "tertiary-fixed-dim": "#eebd90",
+                    "on-background": "#1b1c1e",
+                    "background": "#faf9fb",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#c4c6ce",
+                    "inverse-surface": "#2f3033",
+                    "primary-fixed": "#d2e4ff",
+                    "surface-tint": "#49607e",
+                    "primary-fixed-dim": "#b0c8eb",
+                    "outline": "#74777e",
+                    "secondary": "#5d5f5f",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#314865",
+                    "on-surface-variant": "#43474d",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#faf9fb",
+                    "on-tertiary-fixed": "#2d1600"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sidebar-width": "320px",
+                    "grid-gutter": "1rem",
+                    "container-padding": "2rem",
+                    "unit": "4px",
+                    "stack-gap": "1.5rem"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "mono-timer": ["JetBrains Mono"],
+                    "label-bold": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "display": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "mono-timer": ["20px", {"lineHeight": "1", "fontWeight": "600"}],
+                    "label-bold": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "headline-lg": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f4f6f8; /* Soft Gray as per Elevation Level 0 */
+            overflow: hidden;
+        }
+        .main-height {
+            height: calc(100vh - 64px - 80px - 4px); /* Viewport - Header - Footer - Progress */
+        }
+        .question-card {
+            border: 1px solid #E2E8F0;
+            transition: border-color 0.2s ease;
+        }
+        .option-container:hover {
+            background-color: #f5f3f6;
+        }
+        .option-input:checked + .option-content {
+            border: 2px solid #000f22;
+            background-color: #d2e4ff;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #faf9fb;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #c4c6ce;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- Progress Bar Anchor -->
+<div class="fixed top-0 left-0 w-full h-1 bg-primary z-[60]">
+<div class="h-full bg-primary" style="width: 52.5%;"></div> <!-- Example Progress for Q21 of 40 -->
+</div>
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-dim fixed top-0 w-full z-50 h-16 border-b border-outline-variant dark:border-outline flex justify-between items-center px-container-padding w-full">
+<div class="flex items-center gap-4">
+<h1 class="font-headline-lg text-headline-lg font-bold text-primary dark:text-primary-fixed">UKBI Sertifikasi</h1>
+<div class="h-6 w-[1px] bg-outline-variant mx-2"></div>
+<span class="font-headline-md text-headline-md font-semibold text-on-surface-variant">Seksi II: Merespon Kaidah</span>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2 bg-surface-container-high px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="timer">timer</span>
+<span class="font-mono-timer text-mono-timer text-primary">14:52</span>
+</div>
+<div class="cursor-pointer active:scale-95 transition-all">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+</header>
+<!-- Main Workspace -->
+<main class="mt-16 mb-20 flex main-height overflow-hidden">
+<!-- Left Column: Context/Stimulus -->
+<section class="w-1/3 h-full bg-surface-container-low p-container-padding flex flex-col gap-6 overflow-y-auto custom-scrollbar border-r border-outline-variant">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined" data-icon="info" style="font-variation-settings: 'FILL' 1;">info</span>
+<h2 class="font-label-bold text-label-bold uppercase tracking-wider">Petunjuk</h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Pilihlah bentuk kata yang paling tepat untuk melengkapi kalimat berikut. Analisislah struktur kalimat dan hubungan antarkata untuk menentukan respon kaidah yang paling benar.
+            </p>
+<div class="mt-auto p-4 bg-white rounded-lg border border-outline-variant">
+<p class="text-label-sm text-on-surface-variant italic">Tip: Perhatikan penggunaan imbuhan dan kelas kata dalam konteks kalimat formal.</p>
+</div>
+</section>
+<!-- Center/Right Column: Question Content -->
+<section class="flex-grow h-full bg-background flex flex-col overflow-y-auto custom-scrollbar">
+<div class="max-w-[800px] mx-auto w-full py-12 px-container-padding space-y-stack-gap">
+<!-- Question Block -->
+<div class="question-card bg-surface p-8 rounded-lg">
+<div class="flex items-start justify-between mb-8">
+<span class="bg-primary text-on-primary px-3 py-1 rounded font-label-bold text-label-bold">SOAL 21</span>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined" data-icon="flag">flag</span>
+<span class="text-label-sm">Ragu-ragu</span>
+</button>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-10 leading-snug">
+                        Karyawan itu bekerja dengan ___ agar mendapatkan hasil maksimal.
+                    </h3>
+<!-- Options -->
+<div class="grid grid-cols-1 gap-4">
+<label class="cursor-pointer group">
+<input class="hidden option-input" name="ukbi_q21" type="radio" value="A"/>
+<div class="option-content flex items-center p-5 rounded-lg border border-outline-variant hover:border-primary transition-all duration-200 bg-white">
+<span class="w-10 h-10 rounded-full border-2 border-outline-variant flex items-center justify-center font-label-bold text-on-surface-variant group-hover:border-primary group-hover:text-primary mr-4 shrink-0">A</span>
+<span class="font-body-lg text-body-lg">Produktivitas</span>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input class="hidden option-input" name="ukbi_q21" type="radio" value="B"/>
+<div class="option-content flex items-center p-5 rounded-lg border border-outline-variant hover:border-primary transition-all duration-200 bg-white">
+<span class="w-10 h-10 rounded-full border-2 border-outline-variant flex items-center justify-center font-label-bold text-on-surface-variant group-hover:border-primary group-hover:text-primary mr-4 shrink-0">B</span>
+<span class="font-body-lg text-body-lg">Produktif</span>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input class="hidden option-input" name="ukbi_q21" type="radio" value="C"/>
+<div class="option-content flex items-center p-5 rounded-lg border border-outline-variant hover:border-primary transition-all duration-200 bg-white">
+<span class="w-10 h-10 rounded-full border-2 border-outline-variant flex items-center justify-center font-label-bold text-on-surface-variant group-hover:border-primary group-hover:text-primary mr-4 shrink-0">C</span>
+<span class="font-body-lg text-body-lg">Memproduksi</span>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input class="hidden option-input" name="ukbi_q21" type="radio" value="D"/>
+<div class="option-content flex items-center p-5 rounded-lg border border-outline-variant hover:border-primary transition-all duration-200 bg-white">
+<span class="w-10 h-10 rounded-full border-2 border-outline-variant flex items-center justify-center font-label-bold text-on-surface-variant group-hover:border-primary group-hover:text-primary mr-4 shrink-0">D</span>
+<span class="font-body-lg text-body-lg">Terproduksi</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Sidebar: Question Grid -->
+<aside class="w-sidebar-width h-full bg-surface p-6 border-l border-outline-variant flex flex-col">
+<h4 class="font-label-bold text-label-bold text-on-surface-variant mb-6 uppercase">Navigasi Soal (21-40)</h4>
+<div class="grid grid-cols-5 gap-3">
+<!-- Row 1 -->
+<button class="w-full aspect-square border-2 border-primary bg-primary text-white rounded font-label-bold">21</button>
+<button class="w-full aspect-square border border-outline-variant hover:border-primary transition-colors rounded text-on-surface-variant font-label-bold">22</button>
+<button class="w-full aspect-square border border-outline-variant hover:border-primary transition-colors rounded text-on-surface-variant font-label-bold">23</button>
+<button class="w-full aspect-square border-2 border-amber-500 bg-amber-500 text-white rounded font-label-bold flex items-center justify-center">
+<span class="material-symbols-outlined text-sm" data-icon="flag" style="font-variation-settings: 'FILL' 1;">flag</span>
+<span class="ml-1">24</span>
+</button>
+<button class="w-full aspect-square border border-outline-variant hover:border-primary transition-colors rounded text-on-surface-variant font-label-bold">25</button>
+<!-- Row 2 -->
+<button class="w-full aspect-square border border-outline-variant hover:border-primary transition-colors rounded text-on-surface-variant font-label-bold">26</button>
+<button class="w-full aspect-square border border-outline-variant hover:border-primary transition-colors rounded text-on-surface-variant font-label-bold">27</button>
+<button class="w-full aspect-square border border-outline-variant hover:border-primary transition-colors rounded text-on-surface-variant font-label-bold">28</button>
+<button class="w-full aspect-square border border-outline-variant hover:border-primary transition-colors rounded text-on-surface-variant font-label-bold">29</button>
+<button class="w-full aspect-square border border-outline-variant hover:border-primary transition-colors rounded text-on-surface-variant font-label-bold">30</button>
+<!-- Row 3+ omitted for brevity but follow the same pattern -->
+<div class="col-span-5 py-4 flex flex-col gap-2 opacity-40">
+<div class="h-[1px] bg-outline-variant w-full"></div>
+<span class="text-center text-[10px] font-label-bold text-outline uppercase tracking-widest">31 - 40</span>
+<div class="grid grid-cols-5 gap-3">
+<button class="w-full aspect-square border border-outline-variant rounded font-label-bold text-[10px]">31</button>
+<button class="w-full aspect-square border border-outline-variant rounded font-label-bold text-[10px]">32</button>
+<button class="w-full aspect-square border border-outline-variant rounded font-label-bold text-[10px]">33</button>
+<button class="w-full aspect-square border border-outline-variant rounded font-label-bold text-[10px]">34</button>
+<button class="w-full aspect-square border border-outline-variant rounded font-label-bold text-[10px]">35</button>
+</div>
+</div>
+</div>
+<div class="mt-auto space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-4 h-4 bg-primary rounded"></div>
+<span class="text-label-sm text-on-surface-variant">Terjawab</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-4 h-4 bg-amber-500 rounded"></div>
+<span class="text-label-sm text-on-surface-variant">Ragu-ragu</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-4 h-4 border border-outline-variant rounded"></div>
+<span class="text-label-sm text-on-surface-variant">Belum Dijawab</span>
+</div>
+</div>
+</aside>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-surface dark:bg-surface-dim fixed bottom-0 w-full z-50 border-t border-outline-variant dark:border-outline flex justify-around items-center h-20 px-4 w-full">
+<!-- Kembali -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-highest transition-all active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+<span class="font-label-bold text-label-bold">Kembali</span>
+</button>
+<!-- Ragu-ragu -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-highest transition-all active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="flag">flag</span>
+<span class="font-label-bold text-label-bold">Ragu-ragu</span>
+</button>
+<!-- Navigasi -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-highest transition-all active:scale-95 duration-200 md:hidden">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="font-label-bold text-label-bold">Navigasi</span>
+</button>
+<!-- Lanjut -->
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-lg p-2 px-8 hover:bg-surface-container-highest transition-all active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+<span class="font-label-bold text-label-bold">Lanjut</span>
+</button>
+</nav>
+<script>
+        // Simple Interaction Logic
+        document.querySelectorAll('.option-input').forEach(input => {
+            input.addEventListener('change', (e) => {
+                // Update UI state for selected option if needed beyond CSS
+                console.log('Selected option:', e.target.value);
+            });
+        });
+
+        // Time logic (visual only)
+        let seconds = 892; // 14:52
+        const timerSpan = document.querySelector('.font-mono-timer');
+        setInterval(() => {
+            if(seconds > 0) {
+                seconds--;
+                const m = Math.floor(seconds / 60);
+                const s = seconds % 60;
+                timerSpan.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+            }
+        }, 1000);
+    </script>
+</body></html>

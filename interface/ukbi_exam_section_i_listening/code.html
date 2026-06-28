@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#1a0b00",
+                    "secondary-fixed": "#e2e2e2",
+                    "surface-variant": "#e3e2e5",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "on-primary-container": "#768dad",
+                    "surface-container-low": "#f5f3f6",
+                    "on-tertiary": "#ffffff",
+                    "secondary-container": "#dfe0e0",
+                    "surface-dim": "#dbd9dc",
+                    "surface-container-highest": "#e3e2e5",
+                    "surface": "#faf9fb",
+                    "on-secondary-container": "#616363",
+                    "primary": "#000f22",
+                    "on-tertiary-container": "#ae835a",
+                    "on-primary-fixed": "#001c37",
+                    "primary-container": "#0a2540",
+                    "secondary-fixed-dim": "#c6c6c7",
+                    "tertiary-fixed": "#ffdcbe",
+                    "inverse-on-surface": "#f2f0f3",
+                    "surface-container": "#efedf0",
+                    "on-surface": "#1b1c1e",
+                    "on-secondary-fixed-variant": "#454747",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#381d00",
+                    "on-tertiary-fixed-variant": "#613f1c",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#b0c8eb",
+                    "surface-container-high": "#e9e8ea",
+                    "tertiary-fixed-dim": "#eebd90",
+                    "on-background": "#1b1c1e",
+                    "background": "#faf9fb",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#c4c6ce",
+                    "inverse-surface": "#2f3033",
+                    "primary-fixed": "#d2e4ff",
+                    "surface-tint": "#49607e",
+                    "primary-fixed-dim": "#b0c8eb",
+                    "outline": "#74777e",
+                    "secondary": "#5d5f5f",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#314865",
+                    "on-surface-variant": "#43474d",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#faf9fb",
+                    "on-tertiary-fixed": "#2d1600"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sidebar-width": "320px",
+                    "grid-gutter": "1rem",
+                    "container-padding": "2rem",
+                    "unit": "4px",
+                    "stack-gap": "1.5rem"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "mono-timer": ["JetBrains Mono"],
+                    "label-bold": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "display": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "mono-timer": ["20px", {"lineHeight": "1", "fontWeight": "600"}],
+                    "label-bold": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "headline-lg": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #F4F6F8;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-canvas {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: calc(100vh - 4rem - 5rem); /* viewport minus top and bottom bars */
+        }
+        .scroll-mask {
+            mask-image: linear-gradient(to bottom, transparent, black 2rem, black calc(100% - 2rem), transparent);
+        }
+        .waveform-bar {
+            transition: height 0.2s ease-in-out;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- Progress Bar Anchor -->
+<div class="fixed top-0 left-0 w-full h-1 bg-surface-container-highest z-[60]">
+<div class="h-full bg-primary" style="width: 5%;"></div>
+</div>
+<!-- TopAppBar Component -->
+<header class="bg-surface dark:bg-surface-dim fixed top-0 w-full z-50 h-16 border-b border-outline-variant dark:border-outline flex justify-between items-center px-container-padding w-full">
+<div class="flex items-center gap-4">
+<span class="font-headline-lg text-headline-lg font-bold text-primary dark:text-primary-fixed">UKBI Sertifikasi</span>
+<div class="h-6 w-px bg-outline-variant mx-2"></div>
+<h1 class="font-headline-md text-headline-md font-semibold text-primary dark:text-primary-fixed">Seksi I: Mendengarkan</h1>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2 bg-surface-container px-3 py-1.5 rounded-lg border border-outline-variant">
+<span class="material-symbols-outlined text-primary" data-icon="timer">timer</span>
+<span class="font-mono-timer text-mono-timer text-primary">24:58</span>
+</div>
+<div class="flex items-center gap-2 cursor-pointer active:scale-95 transition-all">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+</header>
+<!-- Main Content Layout (Split Pane) -->
+<main class="mt-16 main-canvas">
+<!-- Left Column: Stimulus Audio -->
+<section class="border-r border-outline-variant p-container-padding flex flex-col justify-center items-center bg-surface-bright">
+<div class="max-w-[500px] w-full">
+<div class="mb-8">
+<span class="text-primary font-label-bold text-label-bold uppercase tracking-wider mb-2 block">Stimulus I</span>
+<h2 class="font-display text-display text-primary leading-tight">Stimulus Audio</h2>
+<p class="text-on-surface-variant mt-2 font-body-lg text-body-lg">Dengarkan rekaman berikut dengan saksama.</p>
+</div>
+<!-- Audio Player Card -->
+<div class="bg-white border-2 border-primary rounded-xl p-8 shadow-sm">
+<div class="flex items-center justify-between mb-10">
+<div class="flex items-center gap-4">
+<button class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white cursor-pointer active:scale-90 transition-transform" id="playBtn">
+<span class="material-symbols-outlined !text-4xl" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<div>
+<span class="block font-label-bold text-label-bold text-primary">Sedang Diputar</span>
+<span class="block font-mono-timer text-sm text-on-surface-variant">0:42 / 3:15</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary" data-icon="volume_up" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+<div class="w-20 h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[70%]"></div>
+</div>
+</div>
+</div>
+<!-- Waveform Animation -->
+<div class="flex items-end justify-between h-20 gap-1 mb-4" id="waveform">
+<!-- Dynamic bars generated by JS -->
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden mb-2">
+<div class="bg-primary h-full w-[22%]"></div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Pemberitahuan: Rekaman hanya dapat diputar satu kali.</span>
+</div>
+</div>
+<div class="mt-8 flex items-start gap-4 p-4 rounded-lg bg-surface-container-low border border-outline-variant">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="info">info</span>
+<p class="font-label-bold text-sm text-on-surface-variant">Catatan: Gunakan penyuara telinga (headphone) untuk kualitas suara terbaik dan fokus maksimal.</p>
+</div>
+</div>
+</section>
+<!-- Right Column: Question -->
+<section class="p-container-padding flex flex-col items-center bg-surface overflow-y-auto">
+<div class="max-w-[600px] w-full py-12">
+<div class="mb-10">
+<div class="inline-flex items-center px-3 py-1 rounded-full bg-primary-container text-on-primary-fixed font-label-bold text-label-bold mb-4">
+                        Butir Soal 1
+                    </div>
+<h3 class="font-headline-lg text-headline-lg text-primary">
+                        Berdasarkan teks tersebut, apa maksud dari ungkapan "buah bibir"?
+                    </h3>
+</div>
+<div class="space-y-4">
+<!-- Choice A -->
+<label class="group flex items-center p-5 rounded-lg border border-outline-variant bg-white cursor-pointer hover:border-primary hover:bg-primary-fixed/10 transition-all active:scale-[0.98]">
+<input class="hidden peer" name="q1" type="radio"/>
+<div class="w-10 h-10 flex items-center justify-center border-2 border-outline-variant rounded-md mr-4 text-on-surface-variant font-bold group-hover:border-primary peer-checked:bg-primary peer-checked:border-primary peer-checked:text-white transition-colors">
+                            A
+                        </div>
+<span class="font-body-lg text-body-lg text-on-surface">Orang yang gemar bercerita</span>
+</label>
+<!-- Choice B -->
+<label class="group flex items-center p-5 rounded-lg border-2 border-primary bg-primary-fixed/5 cursor-pointer hover:bg-primary-fixed/10 transition-all active:scale-[0.98]">
+<input checked="" class="hidden peer" name="q1" type="radio"/>
+<div class="w-10 h-10 flex items-center justify-center border-2 border-primary bg-primary rounded-md mr-4 text-white font-bold transition-colors">
+                            B
+                        </div>
+<span class="font-body-lg text-body-lg text-primary font-semibold">Bahan pembicaraan banyak orang</span>
+</label>
+<!-- Choice C -->
+<label class="group flex items-center p-5 rounded-lg border border-outline-variant bg-white cursor-pointer hover:border-primary hover:bg-primary-fixed/10 transition-all active:scale-[0.98]">
+<input class="hidden peer" name="q1" type="radio"/>
+<div class="w-10 h-10 flex items-center justify-center border-2 border-outline-variant rounded-md mr-4 text-on-surface-variant font-bold group-hover:border-primary peer-checked:bg-primary peer-checked:border-primary peer-checked:text-white transition-colors">
+                            C
+                        </div>
+<span class="font-body-lg text-body-lg text-on-surface">Hasil dari perkataan seseorang</span>
+</label>
+<!-- Choice D -->
+<label class="group flex items-center p-5 rounded-lg border border-outline-variant bg-white cursor-pointer hover:border-primary hover:bg-primary-fixed/10 transition-all active:scale-[0.98]">
+<input class="hidden peer" name="q1" type="radio"/>
+<div class="w-10 h-10 flex items-center justify-center border-2 border-outline-variant rounded-md mr-4 text-on-surface-variant font-bold group-hover:border-primary peer-checked:bg-primary peer-checked:border-primary peer-checked:text-white transition-colors">
+                            D
+                        </div>
+<span class="font-body-lg text-body-lg text-on-surface">Kebohongan yang disebarkan</span>
+</label>
+</div>
+<div class="mt-12 pt-12 border-t border-outline-variant flex justify-between items-center">
+<button class="flex items-center gap-2 text-on-surface-variant font-label-bold text-label-bold hover:text-primary transition-colors cursor-pointer active:scale-95">
+<span class="material-symbols-outlined" data-icon="flag">flag</span>
+                        Tandai Ragu-ragu
+                    </button>
+<div class="flex gap-4">
+<button class="px-6 py-3 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-bold text-label-bold cursor-not-allowed opacity-50">
+                            Sebelumnya
+                        </button>
+<button class="px-8 py-3 rounded-lg bg-primary text-white font-label-bold text-label-bold hover:bg-primary-container transition-all active:scale-95 shadow-sm">
+                            Selanjutnya
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Component (Question Tracker) -->
+<nav class="bg-surface dark:bg-surface-dim fixed bottom-0 w-full z-50 border-t border-outline-variant dark:border-outline h-20 px-4 w-full flex items-center justify-center gap-6">
+<div class="flex items-center gap-4">
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-highest transition-all active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+<span class="font-label-bold text-label-bold">Kembali</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-highest transition-all active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="flag">flag</span>
+<span class="font-label-bold text-label-bold">Ragu-ragu</span>
+</button>
+</div>
+<div class="h-10 w-px bg-outline-variant"></div>
+<!-- Question Grid Contextual Integration -->
+<div class="flex gap-2 overflow-x-auto py-2 no-scrollbar max-w-[50%]">
+<!-- 1 Active -->
+<div class="flex-shrink-0 w-10 h-10 rounded bg-primary text-white flex items-center justify-center font-bold text-sm ring-2 ring-offset-2 ring-primary">1</div>
+<!-- 2-20 -->
+<div class="flex-shrink-0 w-10 h-10 rounded border border-outline-variant text-on-surface-variant flex items-center justify-center text-sm hover:border-primary cursor-pointer transition-colors">2</div>
+<div class="flex-shrink-0 w-10 h-10 rounded border border-outline-variant text-on-surface-variant flex items-center justify-center text-sm hover:border-primary cursor-pointer transition-colors">3</div>
+<div class="flex-shrink-0 w-10 h-10 rounded border border-outline-variant text-on-surface-variant flex items-center justify-center text-sm hover:border-primary cursor-pointer transition-colors">4</div>
+<div class="flex-shrink-0 w-10 h-10 rounded border border-outline-variant text-on-surface-variant flex items-center justify-center text-sm hover:border-primary cursor-pointer transition-colors">5</div>
+<div class="flex-shrink-0 w-10 h-10 rounded border border-outline-variant text-on-surface-variant flex items-center justify-center text-sm hover:border-primary cursor-pointer transition-colors">6</div>
+<div class="flex-shrink-0 w-10 h-10 rounded border border-outline-variant text-on-surface-variant flex items-center justify-center text-sm hover:border-primary cursor-pointer transition-colors">7</div>
+<div class="flex-shrink-0 w-10 h-10 rounded border border-outline-variant text-on-surface-variant flex items-center justify-center text-sm hover:border-primary cursor-pointer transition-colors">8</div>
+<div class="flex-shrink-0 w-10 h-10 rounded border border-outline-variant text-on-surface-variant flex items-center justify-center text-sm hover:border-primary cursor-pointer transition-colors">9</div>
+<div class="flex-shrink-0 w-10 h-10 rounded border border-outline-variant text-on-surface-variant flex items-center justify-center text-sm hover:border-primary cursor-pointer transition-colors">10</div>
+<div class="flex-shrink-0 w-10 h-10 rounded border border-outline-variant text-on-surface-variant flex items-center justify-center text-sm hover:border-primary cursor-pointer transition-colors">...</div>
+<div class="flex-shrink-0 w-10 h-10 rounded border border-outline-variant text-on-surface-variant flex items-center justify-center text-sm hover:border-primary cursor-pointer transition-colors">20</div>
+</div>
+<div class="h-10 w-px bg-outline-variant"></div>
+<div class="flex items-center gap-4">
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-lg p-2 active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="font-label-bold text-label-bold">Navigasi</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-highest transition-all active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+<span class="font-label-bold text-label-bold">Lanjut</span>
+</button>
+</div>
+</nav>
+<script>
+        // Simple Audio Waveform Simulation
+        const waveform = document.getElementById('waveform');
+        const barCount = 40;
+        let bars = [];
+
+        for (let i = 0; i < barCount; i++) {
+            const bar = document.createElement('div');
+            bar.className = 'waveform-bar bg-primary-fixed-dim w-1.5 rounded-full';
+            bar.style.height = `${Math.random() * 100}%`;
+            waveform.appendChild(bar);
+            bars.push(bar);
+        }
+
+        let isPlaying = false;
+        const playBtn = document.getElementById('playBtn');
+
+        playBtn.addEventListener('click', () => {
+            isPlaying = !isPlaying;
+            playBtn.querySelector('span').textContent = isPlaying ? 'pause' : 'play_arrow';
+            
+            if (isPlaying) {
+                animateBars();
+            }
+        });
+
+        function animateBars() {
+            if (!isPlaying) return;
+            bars.forEach(bar => {
+                const height = Math.random() * 80 + 20;
+                bar.style.height = `${height}%`;
+                bar.style.backgroundColor = height > 60 ? '#000f22' : '#b0c8eb';
+            });
+            setTimeout(animateBars, 150);
+        }
+
+        // Initialize with active selection state logic
+        // Current Page is Listening Section (Navigasi or Grid Item 1 is active logically)
+    </script>
+</body></html>

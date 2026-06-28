@@ -1,0 +1,562 @@
+{
+  "meta": {
+    "judul": "Tata Bahasa Baku Bahasa Indonesia (TBBBI)",
+    "edisi": "Ketiga",
+    "penerbit": "Badan Pengembangan dan Pembinaan Bahasa, Kemdikbud",
+    "tahun": 2017,
+    "keterangan": "Database kaidah tata bahasa berdasarkan TBBBI Edisi Ketiga yang relevan untuk soal Seksi II (Merespons Kaidah) pada simulasi UKBI. Mencakup morfologi, kelas kata, frasa, klausa, kalimat, dan wacana."
+  },
+  "bab": [
+    {
+      "nomor": 2,
+      "judul": "Morfologi",
+      "sub_bab": [
+        {
+          "nomor": "2.1",
+          "judul": "Prefiks (Awalan)",
+          "kaidah": [
+            {
+              "id": "TB-II-1",
+              "topik": "Prefiks me(N)-",
+              "penjelasan": "Prefiks me(N)- membentuk verba aktif. Bentuk nasalnya bergantung pada fonem awal kata dasar:\n• me- → kata dasar berawalan /l/, /r/, /w/, /y/, /m/, /n/, /ny/, /ng/\n• mem- → kata dasar berawalan /b/, /p/ (p luluh)\n• men- → kata dasar berawalan /d/, /t/ (t luluh)\n• meng- → kata dasar berawalan vokal, /g/, /k/ (k luluh), /h/\n• meny- → kata dasar berawalan /s/ (s luluh)\n• me- → kata dasar berawalan /l/, /r/, /w/, /y/",
+              "contoh_benar": [
+                "me- + lakukan → melakukan",
+                "me- + rasa → merasa",
+                "mem- + baca → membaca",
+                "mem- + bantu → membantu",
+                "men- + dapat → mendapat",
+                "men- + tulis → menulis",
+                "meng- + ambil → mengambil",
+                "meng- + gunakan → menggunakan",
+                "meng- + karang → mengarang",
+                "meny- + sapu → menyapu",
+                "meny- + sebut → menyebut"
+              ],
+              "contoh_salah": [
+                "mempergi (bukan mepergi atau bepergi)",
+                "mentulis (seharusnya menulis)",
+                "mengkarang (seharusnya mengarang)",
+                "mensapu (seharusnya menyapu)"
+              ],
+              "catatan": "Fonem /p/, /t/, /k/, /s/ pada awal kata dasar luluh (menghilang) ketika bertemu nasalisasi me(N)-."
+            },
+            {
+              "id": "TB-II-2",
+              "topik": "Prefiks ber-",
+              "penjelasan": "Prefiks ber- umumnya membentuk verba yang menyatakan:\n• memiliki sesuatu: beranak, berambut\n• melakukan perbuatan: berlari, berenang\n• dalam keadaan: berpakaian, bersih\n\nAlomorf: ber- → be- jika kata dasar dimulai /r/ atau berakhiran -er.",
+              "contoh_benar": [
+                "ber- + jalan → berjalan",
+                "ber- + renang → berenang",
+                "ber- + kerja → bekerja",
+                "ber- + ramai → beramai",
+                "ber- + tanya → bertanya"
+              ],
+              "contoh_salah": [
+                "berrenang (seharusnya berenang)",
+                "berpunyai (seharusnya mempunyai—ber- tidak dipakai di sini)"
+              ],
+              "catatan": "ber- + kata dasar berawalan r → be- (tidak dirangkap)."
+            },
+            {
+              "id": "TB-II-3",
+              "topik": "Prefiks ter-",
+              "penjelasan": "Prefiks ter- dapat menyatakan:\n• keadaan sudah berlangsung (aspek hasil): tertulis, terbuka\n• ketidaksengajaan: terjatuh, tergores\n• kemampuan (untuk nomina): terangkat, terbawa\n• tingkat paling/superlatif: terbesar, tercepat",
+              "contoh_benar": [
+                "ter- + buka → terbuka",
+                "ter- + jatuh → terjatuh",
+                "ter- + besar → terbesar",
+                "ter- + makan → termakan (tidak sengaja)"
+              ],
+              "contoh_salah": [
+                "keterbukaan (bukan keterbukaan sbg kekeliruan—ini benar)",
+                "terpaling besar (salah; seharusnya terbesar saja)"
+              ],
+              "catatan": "ter- bermakna superlatif tidak perlu ditambah kata 'paling'."
+            },
+            {
+              "id": "TB-II-4",
+              "topik": "Prefiks di-",
+              "penjelasan": "Prefiks di- membentuk verba pasif dan ditulis serangkai dengan kata yang mengikutinya. Perhatikan perbedaan:\n• di- (awalan verba pasif) → ditulis serangkai\n• di (preposisi tempat) → ditulis terpisah",
+              "contoh_benar": [
+                "Buku itu dibaca oleh siswa. (di- awalan)",
+                "Dia duduk di kursi. (di preposisi)",
+                "diambil, dibawa, ditulis, diperbaiki"
+              ],
+              "contoh_salah": [
+                "Buku itu di baca siswa. (di- sebagai awalan harus serangkai)",
+                "Dia duduk dikursi. (di preposisi harus terpisah)"
+              ],
+              "catatan": "Ini adalah kesalahan paling umum dalam penulisan bahasa Indonesia."
+            },
+            {
+              "id": "TB-II-5",
+              "topik": "Sufiks -kan dan -i",
+              "penjelasan": "Sufiks -kan menyatakan kausatif (menyebabkan) atau benefaktif (untuk).\nSufiks -i menyatakan lokatif (tempat berlangsung perbuatan) atau benefaktif tertentu.\n\nPerbedaan kunci:\n• -kan: objeknya adalah yang dikenai perbuatan\n• -i: objeknya adalah tempat/sasaran perbuatan",
+              "contoh_benar": [
+                "Dia menyirami tanaman. (menyiram + -i: tanaman sebagai tempat)",
+                "Dia menyiramkan air ke tanaman. (menyiram + -kan: air sebagai objek)",
+                "Ibu memasaki adik. (memasak + -i: untuk adik)",
+                "Ibu memasakkan nasi untuk adik. (memasak + -kan: nasi sebagai objek)"
+              ],
+              "contoh_salah": [
+                "Dia menyiramkan tanaman. (salah konteks—air yang disiramkan, bukan tanaman)"
+              ],
+              "catatan": "-kan dan -i sering tertukar; perhatikan objek yang dimaksud."
+            }
+          ]
+        },
+        {
+          "nomor": "2.2",
+          "judul": "Reduplikasi (Kata Ulang)",
+          "kaidah": [
+            {
+              "id": "TB-II-6",
+              "topik": "Jenis-Jenis Reduplikasi",
+              "penjelasan": "Reduplikasi (pengulangan kata) dalam bahasa Indonesia terdiri atas:\n1. Reduplikasi penuh: pengulangan seluruh bentuk dasar\n2. Reduplikasi sebagian: pengulangan sebagian bentuk dasar\n3. Reduplikasi berubah bunyi: pengulangan dengan perubahan fonem\n4. Reduplikasi berimbuhan: pengulangan dengan imbuhan",
+              "contoh_benar": [
+                "meja-meja (reduplikasi penuh, jamak)",
+                "berlari-lari (reduplikasi berimbuhan, frekuentatif)",
+                "sayur-mayur (reduplikasi berubah bunyi, kolektif)",
+                "lauk-pauk (reduplikasi berubah bunyi, kolektif)",
+                "memper-cepat-cepat (reduplikasi berimbuhan)"
+              ],
+              "contoh_salah": [
+                "meja2 (penulisan 'meja2' dalam teks formal tidak benar)",
+                "Para siswa-siswa (ganda penanda jamak—salah; pilih satu: 'para siswa' atau 'siswa-siswa')"
+              ],
+              "catatan": "Pengunaan 'para' dan kata ulang sekaligus (para siswa-siswa) merupakan pleonasme yang salah."
+            },
+            {
+              "id": "TB-II-7",
+              "topik": "Makna Reduplikasi",
+              "penjelasan": "Makna yang terkandung dalam reduplikasi:\n• Jamak/banyak: buku-buku, pohon-pohon\n• Frekuentatif (berulang kali): berlari-lari, tertawa-tawa\n• Intensitas: sangat/sekali: diam-diam, cepat-cepat\n• Melemahkan makna: kehijau-hijauan, kemerah-merahan\n• Kolektif: sayur-mayur, lauk-pauk, buah-buahan",
+              "contoh_benar": [
+                "Para guru-guru → salah (pleonasme); seharusnya 'para guru' atau 'guru-guru'",
+                "Dia berlari-lari di taman. (frekuentatif: berlari lebih dari sekali)",
+                "Wajahnya kemerah-merahan karena malu. (agak merah)"
+              ],
+              "contoh_salah": [
+                "para mahasiswa-mahasiswa",
+                "beberapa buku-buku"
+              ],
+              "catatan": "Pleonasme jamak (para + kata ulang) adalah kesalahan yang sering muncul di UKBI."
+            }
+          ]
+        },
+        {
+          "nomor": "2.3",
+          "judul": "Komposisi (Pemajemukan)",
+          "kaidah": [
+            {
+              "id": "TB-II-8",
+              "topik": "Kata Majemuk",
+              "penjelasan": "Kata majemuk adalah gabungan dua kata atau lebih yang membentuk satu kesatuan makna baru. Ciri-ciri:\n• Memiliki makna yang berbeda dari makna unsur-unsurnya\n• Tidak dapat disisipi kata 'yang'\n• Secara umum ditulis terpisah",
+              "contoh_benar": [
+                "meja makan (meja untuk makan)",
+                "kamar tidur (kamar untuk tidur)",
+                "orang tua (ayah/ibu—bukan orang yang sudah tua)",
+                "kepala sekolah (pemimpin sekolah)",
+                "tanda tangan (tanda berupa tulisan tangan)"
+              ],
+              "contoh_salah": [
+                "mejamakan (seharusnya ditulis terpisah: meja makan)",
+                "kamartidur (seharusnya: kamar tidur)"
+              ],
+              "catatan": "Kata majemuk ditulis terpisah, kecuali yang sudah menyatu (lihat EYD)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nomor": 3,
+      "judul": "Kelas Kata",
+      "sub_bab": [
+        {
+          "nomor": "3.1",
+          "judul": "Verba (Kata Kerja)",
+          "kaidah": [
+            {
+              "id": "TB-III-1",
+              "topik": "Verba Transitif dan Intransitif",
+              "penjelasan": "Verba transitif memerlukan objek; verba intransitif tidak.\nVerba transitif aktif ditandai prefiks me(N)- dan membutuhkan objek.\nKesalahan umum: menggunakan verba transitif tanpa objek atau verba intransitif dengan objek langsung.",
+              "contoh_benar": [
+                "Dia membaca buku. (membaca = transitif, objek: buku)",
+                "Anak itu menangis. (menangis = intransitif, tidak perlu objek)",
+                "Mereka mempermasalahkan isu tersebut. (transitif)"
+              ],
+              "contoh_salah": [
+                "Dia membaca. (membaca tanpa objek—tidak salah secara mutlak, namun tidak lengkap dalam konteks formal)",
+                "Anak itu menangis air mata. (menangis adalah intransitif)"
+              ],
+              "catatan": ""
+            },
+            {
+              "id": "TB-III-2",
+              "topik": "Verba Aktif dan Pasif",
+              "penjelasan": "Kalimat aktif: subjek melakukan perbuatan (predikat ber- atau me(N)-).\nKalimat pasif: subjek dikenai perbuatan (predikat di- atau ter-).\n\nDalam kalimat pasif dengan pelaku orang pertama/kedua, verba TIDAK menggunakan di-, melainkan langsung tanpa prefiks.",
+              "contoh_benar": [
+                "Aktif: Ibu memasak nasi. → Pasif: Nasi dimasak (oleh) ibu.",
+                "Aktif: Saya membaca buku. → Pasif: Buku saya baca. (pelaku orang pertama)",
+                "Aktif: Kamu mengerjakan PR. → Pasif: PR kamu kerjakan."
+              ],
+              "contoh_salah": [
+                "Buku saya dibaca. (jika maknanya 'saya yang membaca', harusnya 'Buku saya baca')",
+                "PR kamu dikerjakan. (seharusnya: PR kamu kerjakan)"
+              ],
+              "catatan": "Pasif dengan pelaku orang pertama/kedua: verba tidak memakai di-, cukup bentuk dasar setelah pronomina."
+            }
+          ]
+        },
+        {
+          "nomor": "3.2",
+          "judul": "Nomina (Kata Benda)",
+          "kaidah": [
+            {
+              "id": "TB-III-3",
+              "topik": "Penanda Nomina",
+              "penjelasan": "Nomina adalah kata yang mengacu pada manusia, binatang, benda, dan konsep atau pengertian. Nomina dapat didahului kata bilangan atau kata sandang (si, sang, para, kaum).\n\nKata sandang:\n• si: dipakai untuk orang atau binatang tertentu\n• sang: dipakai untuk menghormati\n• para: dipakai untuk jamak manusia (tidak perlu kata ulang)\n• kaum: menyatakan kelompok manusia",
+              "contoh_benar": [
+                "Si kancil dikenal sebagai binatang yang cerdik.",
+                "Sang Merah Putih berkibar dengan gagah.",
+                "Para siswa mengikuti upacara bendera.",
+                "Kaum muda harus memimpin perubahan."
+              ],
+              "contoh_salah": [
+                "Para siswa-siswa mengikuti upacara. (pleonasme—hapus salah satu)",
+                "Para guru-guru mengadakan rapat. (seharusnya: para guru/guru-guru)"
+              ],
+              "catatan": ""
+            }
+          ]
+        },
+        {
+          "nomor": "3.3",
+          "judul": "Adjektiva (Kata Sifat)",
+          "kaidah": [
+            {
+              "id": "TB-III-4",
+              "topik": "Tingkat Perbandingan Adjektiva",
+              "penjelasan": "Tingkat perbandingan adjektiva:\n• Positif: tidak ada perbandingan (besar, cepat)\n• Komparatif: lebih... dari(pada)...\n• Superlatif: paling..., ter-...\n\nKesalahan umum: menggabungkan penanda superlatif secara ganda (paling + ter- atau paling + sangat).",
+              "contoh_benar": [
+                "Mobil ini lebih cepat daripada sepeda motor.",
+                "Dia adalah siswa yang paling cerdas di kelasnya.",
+                "Gunung Everest adalah puncak tertinggi di dunia."
+              ],
+              "contoh_salah": [
+                "Dia adalah siswa yang paling tercerdas. (ganda—hapus 'ter-' atau 'paling')",
+                "Ini adalah yang paling terbaik. (ganda—hapus salah satu)",
+                "Lebih baik daripada dibanding. (pilih satu: 'daripada' atau 'dibanding')"
+              ],
+              "catatan": "Pemakaian 'paling' + 'ter-' sekaligus adalah pleonasme yang sering muncul di soal UKBI."
+            }
+          ]
+        },
+        {
+          "nomor": "3.4",
+          "judul": "Adverbia (Kata Keterangan)",
+          "kaidah": [
+            {
+              "id": "TB-III-5",
+              "topik": "Adverbia Frekuensi dan Negasi",
+              "penjelasan": "Adverbia keterangan:\n• Frekuensi: selalu, sering, jarang, kadang-kadang, pernah, tidak pernah\n• Negasi: tidak (untuk verba/adjektiva), bukan (untuk nomina/frasa nomina)\n\nKesalahan umum: menggunakan 'tidak' untuk nomina atau 'bukan' untuk verba.",
+              "contoh_benar": [
+                "Dia tidak makan pagi. (tidak + verba)",
+                "Ini bukan milikku. (bukan + nomina)",
+                "Dia bukan dokter. (bukan + nomina)",
+                "Hari ini tidak panas. (tidak + adjektiva)"
+              ],
+              "contoh_salah": [
+                "Dia bukan makan pagi. (bukan tidak boleh dipakai dengan verba)",
+                "Ini tidak milikku. (tidak tidak boleh dipakai dengan nomina)"
+              ],
+              "catatan": "'Tidak' untuk verba dan adjektiva; 'bukan' untuk nomina dan pronomina."
+            }
+          ]
+        },
+        {
+          "nomor": "3.5",
+          "judul": "Konjungsi (Kata Hubung)",
+          "kaidah": [
+            {
+              "id": "TB-III-6",
+              "topik": "Konjungsi Korelatif",
+              "penjelasan": "Konjungsi korelatif adalah konjungsi berpasangan yang menghubungkan dua unsur kalimat setara:\n• baik ... maupun ...\n• tidak hanya ... tetapi juga ...\n• bukan ... melainkan ...\n• entah ... entah ...\n• jangankan ... pun ...\n\nUnsur yang dihubungkan harus paralel (setara jenis dan fungsinya).",
+              "contoh_benar": [
+                "Baik guru maupun murid harus hadir.",
+                "Dia tidak hanya pandai, tetapi juga rajin.",
+                "Ini bukan kesalahanku, melainkan kesalahannya."
+              ],
+              "contoh_salah": [
+                "Baik guru dan murid harus hadir. (harusnya 'maupun')",
+                "Tidak hanya pandai, tapi juga rajin. (formal: 'tetapi', bukan 'tapi')"
+              ],
+              "catatan": "Dalam teks formal, gunakan 'tetapi' bukan 'tapi'."
+            },
+            {
+              "id": "TB-III-7",
+              "topik": "Konjungsi Subordinatif",
+              "penjelasan": "Konjungsi subordinatif menghubungkan anak kalimat dengan induk kalimat:\n• sebab/karena: menyatakan alasan\n• sehingga: menyatakan akibat\n• jika/apabila/kalau: menyatakan syarat\n• agar/supaya: menyatakan tujuan\n• meskipun/walaupun: menyatakan perlawanan\n• ketika/sewaktu/saat: menyatakan waktu",
+              "contoh_benar": [
+                "Dia tidak datang karena sakit.",
+                "Belajarlah sungguh-sungguh agar berhasil.",
+                "Meskipun hujan, dia tetap berangkat.",
+                "Jika rajin belajar, kamu pasti berhasil."
+              ],
+              "contoh_salah": [
+                "Dia tidak datang karena sebab sakit. (pilih satu: 'karena' atau 'sebab')",
+                "Supaya agar lulus ujian, belajarlah. (pilih satu: 'supaya' atau 'agar')"
+              ],
+              "catatan": "Penggunaan dua konjungsi bermakna sama sekaligus adalah pleonasme."
+            }
+          ]
+        },
+        {
+          "nomor": "3.6",
+          "judul": "Preposisi (Kata Depan)",
+          "kaidah": [
+            {
+              "id": "TB-III-8",
+              "topik": "Penggunaan Preposisi yang Tepat",
+              "penjelasan": "Preposisi menunjukkan hubungan antara nomina dengan unsur lain:\n• di: menyatakan tempat berada\n• ke: menyatakan arah tujuan\n• dari: menyatakan asal atau arah\n• pada: menyatakan waktu atau tempat (abstrak)\n• dalam: menyatakan isi/lingkup\n• antara: menyatakan di tengah dua hal\n• terhadap: menyatakan sasaran sikap",
+              "contoh_benar": [
+                "Buku itu ada di rak. (tempat)",
+                "Dia pergi ke pasar. (tujuan)",
+                "Dia berasal dari Bandung. (asal)",
+                "Pada hari Senin, ia berangkat. (waktu)",
+                "Dalam rapat itu, banyak pendapat disampaikan. (lingkup)"
+              ],
+              "contoh_salah": [
+                "Buku itu ada pada rak. (pada lebih tepat untuk waktu/abstrak)",
+                "Permasalahan dalam pendidikan daripada. (daripada tidak tepat di sini)"
+              ],
+              "catatan": "'Pada' untuk waktu dan tempat abstrak; 'di' untuk tempat konkret."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nomor": 4,
+      "judul": "Frasa",
+      "sub_bab": [
+        {
+          "nomor": "4.1",
+          "judul": "Frasa Nominal",
+          "kaidah": [
+            {
+              "id": "TB-IV-1",
+              "topik": "Urutan Unsur Frasa Nominal",
+              "penjelasan": "Dalam frasa nominal bahasa Indonesia, unsur penjelas (atribut) umumnya mengikuti unsur inti (Hukum D-M: Diterangkan-Menerangkan). Ini kebalikan dari pola bahasa Inggris.",
+              "contoh_benar": [
+                "Rumah sakit (rumah = D, sakit = M)",
+                "Buku pelajaran (buku = D, pelajaran = M)",
+                "Kepala sekolah (kepala = D, sekolah = M)",
+                "Air bersih (air = D, bersih = M)"
+              ],
+              "contoh_salah": [
+                "Sakit rumah (urutan salah—ini bukan bahasa Indonesia)",
+                "Pelajaran buku (urutan salah)"
+              ],
+              "catatan": "Hukum D-M: yang diterangkan di depan, yang menerangkan di belakang."
+            }
+          ]
+        },
+        {
+          "nomor": "4.2",
+          "judul": "Frasa Verbal",
+          "kaidah": [
+            {
+              "id": "TB-IV-2",
+              "topik": "Aspek, Modalitas, dan Polaritas dalam Frasa Verbal",
+              "penjelasan": "Frasa verbal dapat mengandung:\n• Penanda aspek: sudah, telah, sedang, akan, belum\n• Penanda modalitas: harus, boleh, dapat, mau, mungkin\n• Penanda polaritas: tidak, bukan\n\nUrutan yang benar: modalitas + aspek + verba",
+              "contoh_benar": [
+                "Dia sudah makan. (aspek selesai)",
+                "Kami sedang belajar. (aspek berlangsung)",
+                "Dia akan pergi. (aspek akan datang)",
+                "Kamu harus sudah selesai. (modalitas + aspek + verba)"
+              ],
+              "contoh_salah": [
+                "Dia sudah telah makan. (ganda aspek—pilih satu)",
+                "Dia akan sedang makan. (kombinasi yang tidak logis)"
+              ],
+              "catatan": "Penanda aspek ganda (sudah + telah) adalah pleonasme."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nomor": 5,
+      "judul": "Kalimat",
+      "sub_bab": [
+        {
+          "nomor": "5.1",
+          "judul": "Kalimat Efektif",
+          "kaidah": [
+            {
+              "id": "TB-V-1",
+              "topik": "Syarat Kalimat Efektif",
+              "penjelasan": "Kalimat efektif adalah kalimat yang memenuhi syarat:\n1. Kesepadanan: subjek dan predikat harus jelas\n2. Keparalelan: unsur-unsur setara harus sejajar bentuknya\n3. Kehematan: tidak ada kata mubazir/pleonasme\n4. Kelogisan: makna dapat diterima akal\n5. Ketegasan: unsur yang dipentingkan ditonjolkan\n6. Kevariasian: kalimat tidak monoton",
+              "contoh_benar": [
+                "Bagi mahasiswa yang terlambat tidak diperbolehkan masuk. → TIDAK EFEKTIF",
+                "Mahasiswa yang terlambat tidak diperbolehkan masuk. → EFEKTIF (subjek jelas)",
+                "Ia membeli baju, celana, dan sepatu. (paralel: semua nomina)"
+              ],
+              "contoh_salah": [
+                "Bagi mahasiswa yang terlambat tidak diperbolehkan masuk. (tidak ada subjek utama)",
+                "Ia membeli baju, bercelana, dan memakai sepatu. (tidak paralel)"
+              ],
+              "catatan": "Kalimat yang diawali 'bagi' sering kehilangan subjek."
+            },
+            {
+              "id": "TB-V-2",
+              "topik": "Kalimat Pleonasme (Mubazir)",
+              "penjelasan": "Pleonasme adalah penggunaan kata berlebih yang maknanya sudah terkandung dalam kata lain. Contoh-contoh yang sering muncul di UKBI:",
+              "contoh_benar": [
+                "Saya mundur ke belakang. → PLEONASME",
+                "Saya mundur. → BENAR (mundur sudah berarti ke belakang)",
+                "Dia naik ke atas. → PLEONASME",
+                "Dia naik. → BENAR"
+              ],
+              "contoh_salah": [
+                "Saya mundur ke belakang. (pleonasme: mundur = bergerak ke belakang)",
+                "Dia naik ke atas. (pleonasme: naik = bergerak ke atas)",
+                "Kami saling bertatap muka satu sama lain. (ganda: saling = satu sama lain)",
+                "Dia turun ke bawah. (pleonasme)",
+                "Acara ini sangat unik sekali. (ganda: sangat = sekali)",
+                "Dia adalah anak yang rajin dan tekun sekali. (sangat + sekali ganda)",
+                "Masalah ini harus segera diselesaikan sesegera mungkin. (ganda)",
+                "para mahasiswa-mahasiswa (ganda jamak)"
+              ],
+              "catatan": "Pleonasme adalah materi andalan Seksi II UKBI."
+            },
+            {
+              "id": "TB-V-3",
+              "topik": "Kesepadanan Struktur Kalimat",
+              "penjelasan": "Kesalahan umum yang menyebabkan kalimat tidak sepadan:\n1. Preposisi di depan subjek menghilangkan subjek\n2. Predikat berupa frasa preposisional (bukan verba/adjektiva)\n3. Subjek ganda",
+              "contoh_benar": [
+                "Masalah ini dibahas dalam rapat. (ada S-P-K)",
+                "Rapat membahas masalah ini. (ada S-P-O)",
+                "Penelitian itu bertujuan untuk mengetahui pengaruh suhu terhadap pertumbuhan. (logis)"
+              ],
+              "contoh_salah": [
+                "Dalam rapat dibahas masalah ini. (tidak ada subjek jika dibaca sebagai kalimat tunggal)",
+                "Kepada peserta diharapkan mengisi formulir. (tidak ada subjek)",
+                "Penelitian ini bertujuan untuk mengetahui apa pengaruh suhu. (tidak perlu 'apa')"
+              ],
+              "catatan": "Kalimat yang diawali 'kepada' atau 'dalam' sering kehilangan subjek."
+            },
+            {
+              "id": "TB-V-4",
+              "topik": "Keparalelan Kalimat",
+              "penjelasan": "Keparalelan (paralelisme) mensyaratkan unsur-unsur setara dalam daftar/rincian harus memiliki bentuk yang sama (semua nomina, atau semua verba, atau semua klausa).",
+              "contoh_benar": [
+                "Tugas mahasiswa adalah belajar, berorganisasi, dan berinovasi. (semua verba)",
+                "Ia suka membaca, menulis, dan berdiskusi. (semua verba)",
+                "Syarat pendaftaran: fotokopi KTP, surat lamaran, dan daftar riwayat hidup. (semua nomina)"
+              ],
+              "contoh_salah": [
+                "Tugas mahasiswa adalah belajar, berorganisasi, dan inovasi. (belajar/berorganisasi = verba, inovasi = nomina)",
+                "Ia suka membaca, menulis, dan diskusi. (diskusi tidak paralel)"
+              ],
+              "catatan": "Ketidakparalelan sering muncul di soal Seksi II UKBI."
+            }
+          ]
+        },
+        {
+          "nomor": "5.2",
+          "judul": "Jenis Kalimat",
+          "kaidah": [
+            {
+              "id": "TB-V-5",
+              "topik": "Kalimat Majemuk Setara dan Bertingkat",
+              "penjelasan": "Kalimat majemuk setara: dua klausa dihubungkan konjungsi setara (dan, atau, tetapi, sedangkan, lalu, kemudian).\n\nKalimat majemuk bertingkat: klausa utama + anak kalimat yang dihubungkan konjungsi subordinatif (karena, jika, agar, meskipun, ketika, dll.).",
+              "contoh_benar": [
+                "Dia belajar dan saya bermain. (majemuk setara)",
+                "Dia tidak datang karena sakit. (majemuk bertingkat)",
+                "Meskipun hujan deras, kami tetap berangkat. (bertingkat—anak kalimat di depan)"
+              ],
+              "contoh_salah": [
+                "Dia tidak datang. Karena sakit. (anak kalimat berdiri sendiri—tidak lengkap)",
+                "Meskipun hujan deras. Kami tetap berangkat. (klausa subordinatif tidak boleh berdiri sendiri)"
+              ],
+              "catatan": "Klausa yang diawali konjungsi subordinatif tidak boleh berdiri sendiri sebagai kalimat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nomor": 6,
+      "judul": "Wacana",
+      "sub_bab": [
+        {
+          "nomor": "6.1",
+          "judul": "Kohesi dan Koherensi",
+          "kaidah": [
+            {
+              "id": "TB-VI-1",
+              "topik": "Kohesi Gramatikal: Referensi",
+              "penjelasan": "Referensi adalah pengacuan unsur dalam wacana kepada unsur lain. Jenis referensi:\n• Anafora: mengacu ke unsur yang disebutkan sebelumnya\n• Katafora: mengacu ke unsur yang disebutkan sesudahnya\n\nKata yang sering digunakan: ia, dia, mereka, ini, itu, tersebut, demikian",
+              "contoh_benar": [
+                "Budi pergi ke pasar. Ia membeli sayuran. (ia = anafora → Budi)",
+                "Inilah yang kami harapkan: perdamaian. (katafora → perdamaian)"
+              ],
+              "contoh_salah": [
+                "Budi pergi ke pasar. Mereka membeli sayuran. (mereka tidak tepat untuk satu orang)"
+              ],
+              "catatan": "Pronomina harus konsisten mengacu pada anteseden yang tepat."
+            },
+            {
+              "id": "TB-VI-2",
+              "topik": "Kohesi Leksikal: Sinonim dan Hiponim",
+              "penjelasan": "Kohesi leksikal mempertahankan keutuhan wacana melalui hubungan makna:\n• Repetisi: pengulangan kata kunci\n• Sinonim: penggunaan kata berpadanan makna\n• Hiponim: kata khusus yang mengacu pada kategori umum\n• Antonim: penggunaan kata berlawanan untuk kontras",
+              "contoh_benar": [
+                "Mawar mekar di taman. Bunga itu berwarna merah. (bunga = hiponim/sinonim konteks mawar)",
+                "Teknologi berkembang pesat. Kemajuan ini membawa banyak perubahan. (kemajuan ≈ sinonim perkembangan)"
+              ],
+              "contoh_salah": [
+                "Mawar mekar di taman. Hewan itu berwarna merah. (hewan tidak berkaitan dengan mawar)"
+              ],
+              "catatan": "Kohesi wacana adalah dasar soal Seksi III (Membaca) UKBI."
+            },
+            {
+              "id": "TB-VI-3",
+              "topik": "Koherensi: Hubungan Antarkalimat",
+              "penjelasan": "Koherensi adalah keterpaduan makna dalam wacana. Ditandai dengan kata penghubung antarkalimat (konjungsi antarkalimat):\n• Tambahan: selain itu, di samping itu, lebih lanjut\n• Pertentangan: namun, akan tetapi, sebaliknya\n• Sebab-akibat: oleh karena itu, oleh sebab itu, dengan demikian\n• Urutan: pertama, kemudian, akhirnya, selanjutnya\n• Contoh: misalnya, contohnya, sebagai contoh",
+              "contoh_benar": [
+                "Cuaca hari ini sangat buruk. Oleh karena itu, acara ditunda.",
+                "Banyak siswa yang berprestasi. Namun, masih ada yang perlu perhatian lebih.",
+                "Pertama, siapkan bahan. Kemudian, campurkan semua bahan."
+              ],
+              "contoh_salah": [
+                "Cuaca hari ini sangat buruk. Tetapi acara ditunda. ('tetapi' adalah konjungsi intrakalimat, bukan antarkalimat; gunakan 'namun')"
+              ],
+              "catatan": "'Tetapi' adalah konjungsi intrakalimat; 'namun' adalah konjungsi antarkalimat."
+            }
+          ]
+        },
+        {
+          "nomor": "6.2",
+          "judul": "Paragraf",
+          "kaidah": [
+            {
+              "id": "TB-VI-4",
+              "topik": "Struktur Paragraf",
+              "penjelasan": "Paragraf yang baik memiliki:\n1. Satu ide pokok (kalimat utama/topik)\n2. Kalimat penjelas yang mendukung ide pokok\n3. Kesatuan (unity): semua kalimat berkaitan dengan ide pokok\n4. Kepaduan (coherence): kalimat-kalimat terhubung dengan lancar\n\nLetak kalimat utama:\n• Deduktif: di awal paragraf\n• Induktif: di akhir paragraf\n• Campuran: di awal dan diulang/dipertegas di akhir",
+              "contoh_benar": [
+                "Deduktif: [Kalimat Utama]. [Penjelas 1]. [Penjelas 2]. [Penjelas 3].",
+                "Induktif: [Penjelas 1]. [Penjelas 2]. [Penjelas 3]. [Simpulan/Kalimat Utama]."
+              ],
+              "contoh_salah": [
+                "Paragraf dengan lebih dari satu ide pokok (campuran tema tanpa transisi yang tepat)."
+              ],
+              "catatan": "Pemahaman struktur paragraf sangat penting untuk Seksi III (Membaca) UKBI."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
