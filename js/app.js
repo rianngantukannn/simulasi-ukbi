@@ -208,7 +208,7 @@ function calculateScores() {
   let benar1 = 0;
   data1.forEach((monolog, mIdx) => {
     monolog.soal.forEach((soal, sIdx) => {
-      const flat = mIdx * 10 + sIdx;
+      const flat = mIdx * 5 + sIdx;
       if (examState.jawaban.s1[flat] === soal.jawaban) benar1++;
     });
   });
@@ -257,6 +257,9 @@ function showResult() {
   const p2 = getPredikat(s2);
   const p3 = getPredikat(s3);
   const pk = getPredikat(komposit);
+
+  // Update global state scores
+  examState.skor = { s1, s2, s3, komposit };
 
   navigateTo('view-result');
 
@@ -311,7 +314,7 @@ function _renderReview() {
   let rows1 = [];
   data1.forEach((m, mIdx) => {
     m.soal.forEach((soal, sIdx) => {
-      const flat = mIdx * 10 + sIdx;
+      const flat = mIdx * 5 + sIdx;
       const jaw = examState.jawaban.s1[flat] || '—';
       const benar = soal.jawaban;
       const ok = jaw === benar;
@@ -388,6 +391,446 @@ function exportReport() {
   a.click();
 }
 
+/* ── Cetak Sertifikat Resmi UKBI ──────────────────────── */
+function printCertificate() {
+  const { s1, s2, s3, komposit } = examState.skor;
+  const p1 = getPredikat(s1).label;
+  const p2 = getPredikat(s2).label;
+  const p3 = getPredikat(s3).label;
+  const pk = getPredikat(komposit).label;
+
+  const tglTest = new Date(examState.mulai || Date.now()).toLocaleDateString('id-ID', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  });
+
+  // Dapatkan nomor sertifikat acak berformat resmi
+  const certNumber = `UKBI/SIM/${new Date().getFullYear()}/${Math.floor(100000 + Math.random() * 900000)}`;
+
+  const certHtml = `<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Sertifikat UKBI - ${examState.peserta}</title>
+  <style>
+    /* Reset & Page Setup */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Times New Roman', Georgia, serif;
+      background: #fafafa;
+      color: #111827;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Print settings */
+    @page {
+      size: A4 landscape;
+      margin: 0;
+    }
+
+    /* Container Sertifikat */
+    .cert-frame {
+      width: 1120px;
+      height: 792px;
+      background: #fff;
+      border: 24px solid #1e3f20; /* Bingkai hijau tua khas Kemdikbud */
+      padding: 40px;
+      position: relative;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    /* Garis Emas Bingkai */
+    .cert-frame::before {
+      content: '';
+      position: absolute;
+      top: 8px; left: 8px; right: 8px; bottom: 8px;
+      border: 2px solid #d4af37; /* Emas */
+      pointer-events: none;
+    }
+
+    /* Header Kop */
+    .cert-header {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: 2px double #1e3f20;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+    }
+    .kemdikbud-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #111827;
+      text-transform: uppercase;
+      font-family: 'Arial', sans-serif;
+    }
+    .badan-title {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #1e3f20;
+      text-transform: uppercase;
+      font-family: 'Arial', sans-serif;
+      margin-top: 2px;
+    }
+    .cert-title-block {
+      text-align: center;
+      margin-top: 14px;
+    }
+    .cert-main-title {
+      font-size: 26px;
+      font-weight: 700;
+      color: #111827;
+      letter-spacing: 0.04em;
+    }
+    .cert-sub-title {
+      font-size: 12px;
+      font-style: italic;
+      color: #4b5563;
+      margin-top: 2px;
+    }
+    .cert-number {
+      font-size: 11px;
+      font-family: 'Courier New', Courier, monospace;
+      margin-top: 4px;
+      font-weight: bold;
+    }
+
+    /* Content Body */
+    .cert-body {
+      text-align: center;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 40px;
+    }
+    .menerangkan {
+      font-size: 15px;
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+    .peserta-name {
+      font-size: 32px;
+      font-weight: bold;
+      color: #1e3f20;
+      border-bottom: 1px solid #d4af37;
+      display: inline-block;
+      padding: 0 30px 4px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .keterangan {
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto 16px;
+    }
+
+    /* Tables & Scores */
+    .score-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 8px auto 0;
+      width: 100%;
+      max-width: 840px;
+      gap: 30px;
+    }
+    .score-table {
+      flex: 1.2;
+      border-collapse: collapse;
+      font-size: 12px;
+      text-align: left;
+    }
+    .score-table th, .score-table td {
+      border: 1px solid #9ca3af;
+      padding: 6px 10px;
+    }
+    .score-table th {
+      background: #f3f4f6;
+      font-weight: 700;
+    }
+    .komposit-box {
+      flex: 0.8;
+      background: #f0fdf4;
+      border: 2px solid #1e3f20;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+      position: relative;
+    }
+    .komposit-value {
+      font-size: 40px;
+      font-weight: bold;
+      color: #1e3f20;
+      line-height: 1;
+    }
+    .komposit-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #4b5563;
+      margin-top: 4px;
+    }
+    .predikat-badge {
+      display: inline-block;
+      background: #1e3f20;
+      color: #fff;
+      font-weight: bold;
+      font-size: 15px;
+      padding: 4px 16px;
+      border-radius: 4px;
+      margin-top: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Footer Signatures */
+    .cert-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 14px;
+      padding: 0 40px;
+    }
+    .sign-date {
+      font-size: 12px;
+      margin-bottom: 60px;
+      text-align: left;
+    }
+    .sign-block {
+      text-align: center;
+      width: 250px;
+      position: relative;
+    }
+    .sign-title {
+      font-size: 12px;
+      margin-bottom: 45px;
+    }
+    .sign-name {
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    .sign-nip {
+      font-size: 11px;
+      color: #4b5563;
+    }
+    
+    /* Stempel & Signature Simulation */
+    .stempel-sim {
+      position: absolute;
+      top: -20px;
+      left: -30px;
+      width: 100px;
+      height: 100px;
+      border: 3px double rgba(30,63,32,0.45);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 7px;
+      font-weight: bold;
+      color: rgba(30,63,32,0.45);
+      text-transform: uppercase;
+      transform: rotate(-15deg);
+      pointer-events: none;
+    }
+    .stempel-inner {
+      text-align: center;
+      line-height: 1.1;
+    }
+    .sign-graphic {
+      position: absolute;
+      top: 10px;
+      left: 60px;
+      font-family: 'Brush Script MT', cursive, sans-serif;
+      font-size: 32px;
+      color: #1d4ed8;
+      transform: rotate(-5deg);
+      pointer-events: none;
+      opacity: 0.85;
+    }
+
+    /* Floating Print Button for Screen Mode */
+    .print-control {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #059669;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-family: sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: background 0.2s;
+      z-index: 1000;
+    }
+    .print-control:hover { background: #047857; }
+
+    /* Media Print Adjustments */
+    @media print {
+      body { background: #fff; padding: 0; }
+      .cert-frame {
+        box-shadow: none;
+        border-width: 24px !important;
+        width: 100vw;
+        height: 100vh;
+        page-break-inside: avoid;
+      }
+      .print-control { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="print-control" onclick="window.print()">🖨️ Cetak / Simpan PDF</button>
+
+  <div class="cert-frame">
+    <!-- Kop Resmi -->
+    <div class="cert-header">
+      <div class="kemdikbud-title">Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi</div>
+      <div class="badan-title">Badan Pengembangan dan Pembinaan Bahasa</div>
+      
+      <div class="cert-title-block">
+        <h1 class="cert-main-title">SERTIFIKAT KEMAHIRAN BERBAHASA INDONESIA</h1>
+        <div class="cert-sub-title">Simulasi Komputerisasi Adaptif (UKBI SIM)</div>
+        <div class="cert-number">Nomor Sertifikat: ${certNumber}</div>
+      </div>
+    </div>
+
+    <!-- Badan Sertifikat -->
+    <div class="cert-body">
+      <p class="menerangkan">menerangkan bahwa</p>
+      <h2 class="peserta-name">${examState.peserta}</h2>
+      <p class="keterangan">
+        telah mengikuti Ujian Kemahiran Berbahasa Indonesia (UKBI) Simulasi Mandiri pada tanggal <strong>${tglTest}</strong>, dan memperoleh hasil kemahiran berbahasa Indonesia sebagai berikut:
+      </p>
+
+      <!-- Hasil Skor -->
+      <div class="score-container">
+        <!-- Tabel Detail -->
+        <table class="score-table">
+          <thead>
+            <tr>
+              <th>Seksi Ujian</th>
+              <th>Predikat Kemahiran</th>
+              <th>Skor Maksimal</th>
+              <th>Skor Perolehan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Seksi I (Mendengarkan)</td>
+              <td>${p1}</td>
+              <td>800</td>
+              <td><strong>${s1}</strong></td>
+            </tr>
+            <tr>
+              <td>Seksi II (Merespons Kaidah)</td>
+              <td>${p2}</td>
+              <td>800</td>
+              <td><strong>${s2}</strong></td>
+            </tr>
+            <tr>
+              <td>Seksi III (Membaca)</td>
+              <td>${p3}</td>
+              <td>800</td>
+              <td><strong>${s3}</strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Total Skor -->
+        <div class="komposit-box">
+          <div class="komposit-value">${komposit}</div>
+          <div class="komposit-label">Skor Komposit Akhir</div>
+          <div class="predikat-badge">${pk}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tanda Tangan & Keterangan Legitimasi -->
+    <div class="cert-footer">
+      <div class="sign-date">
+        Ditetapkan di Jakarta<br>
+        Pada tanggal ${tglTest}
+      </div>
+      
+      <div class="sign-block">
+        <div class="sign-title">
+          Kepala Badan Pengembangan<br>
+          dan Pembinaan Bahasa
+        </div>
+        
+        <!-- Simulasi Tandatangan & Stempel -->
+        <div class="sign-graphic">Aminudin</div>
+        <div class="stempel-sim">
+          <div class="stempel-inner">
+            KEMDIKBUDRISTEK<br>
+            *<br>
+            BADAN BAHASA
+          </div>
+        </div>
+
+        <div class="sign-name">Prof. Dr. E. Aminudin Aziz, M.A., Ph.D.</div>
+        <div class="sign-nip">NIP 196711141991031002</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>`;
+
+  // Coba buka jendela baru untuk preview
+  const certWindow = window.open('', '_blank');
+  if (certWindow) {
+    certWindow.document.open();
+    certWindow.document.write(certHtml);
+    certWindow.document.close();
+  } else {
+    // Fallback: Cetak langsung menggunakan hidden iframe (menembus pop-up blocker)
+    console.warn('[printCertificate] Pop-up diblokir. Menggunakan fallback cetak via iframe.');
+    let iframe = document.getElementById('cert-print-iframe');
+    if (!iframe) {
+      iframe = document.createElement('iframe');
+      iframe.id = 'cert-print-iframe';
+      iframe.style.position = 'fixed';
+      iframe.style.width = '0';
+      iframe.style.height = '0';
+      iframe.style.border = 'none';
+      iframe.style.top = '-1000px';
+      document.body.appendChild(iframe);
+    }
+    const doc = iframe.contentWindow.document;
+    doc.open();
+    doc.write(certHtml);
+    doc.close();
+
+    setTimeout(() => {
+      iframe.contentWindow.focus();
+      iframe.contentWindow.print();
+    }, 500);
+  }
+}
+
 /* ── Init ────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', async () => {
   // Pre-load databases
@@ -447,7 +890,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     finishSection(e.detail.section);
   });
 
-  // Export laporan
+  // Cetak Sertifikat
+  document.getElementById('result-print-btn')?.addEventListener('click', printCertificate);
+
+  // Export laporan JSON
   document.getElementById('result-export-btn')?.addEventListener('click', exportReport);
 
   // Mulai ulang
@@ -459,3 +905,4 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Instruksi Seksi 1 di layar transisi
   // (diisi saat showTransition dipanggil, callback onstart sudah handle startSection)
 });
+

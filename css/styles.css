@@ -942,13 +942,25 @@ input  { font-family: inherit; }
   font-weight: 600;
   transition: all var(--transition);
 }
-#result-export-btn {
-  background: var(--c-primary);
+#result-print-btn {
+  background: #059669; /* emerald green for certificate printing */
   color: #fff;
   border: none;
   box-shadow: var(--shadow-sm);
 }
-#result-export-btn:hover { background: var(--c-primary-70); }
+#result-print-btn:hover {
+  background: #047857;
+  transform: translateY(-1px);
+}
+#result-export-btn {
+  background: var(--c-surface);
+  color: var(--c-text-2);
+  border: 1px solid var(--c-border);
+}
+#result-export-btn:hover {
+  border-color: var(--c-primary-40);
+  color: var(--c-primary);
+}
 #result-restart-btn {
   background: var(--c-surface);
   color: var(--c-text-2);
